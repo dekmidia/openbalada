@@ -20,6 +20,7 @@ body, h1, h2, h3, h4, h5, p, span, strong {font-family: 'SegoeUI', arial, verdan
 .clear {clear: both;}
 a {color: #ddd;}
 a:hover {text-decoration: none; color: #fff;}
+.text-uppercase {text-transform: uppercase;}
 
 
 /* Header*/
@@ -72,13 +73,17 @@ div.form-group-navbar-nav:focus {box-shadow: none;}
 .event-date {width: 20%;}
 p time{display: block; font}
 
-/*.navbar-nav {padding-right: 0;}
-.form-group {padding: 2.5% 0; margin: 0;}
-.form-control {height: 43px; border-radius:0; box-shadow: none;}
+/* Page Evento */
+.descricao-pageevento {min-height: 233px;}
+.details-pageevento{margin: 10px;}
+.details-pageevento .event-date{border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding-top: 0.4em; width: 25%;}
+.details-pageevento .event-date p{font-size: 1.3em;}
+.box-info {display: block; padding: 10px; background: #d90000; text-align: center; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; margin: 10px 0}
+.box-info p {color: #fff; font-size: 18px; margin: 0;}
+.box-info p strong {display: block; font-size: 20px;}
+.maps-pageevento {border: 1px solid #d90000;}
+.maps-pageevento iframe {width: 100%; height: 250px;}
 
-.input-search {margin: 0; padding: 0; border: none;}
-
-.navbar-nav {margin: 0.5px -15px;}*/
 
 footer {background: #ccc; margin-top: 20px;}
 footer div.container {text-align: center;}
