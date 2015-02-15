@@ -15,9 +15,11 @@ body, h1, h2, h3, h4, h5, p, span, strong {font-family: 'SegoeUI', arial, verdan
 .bg-green2, .bg-green2:hover {background: #00ABA9!important;}
 .bg-green3, .bg-green3:hover {background: #339933!important;}
 .bg-purple, .bg-purple:hover {background: #5D049C!important; color: #fff;}
-.titulo-page {color: #FF0000; font-size: 48px; letter-spacing: -2px;}
+.titulo-page {color: #FF0000; font-size: 48px; letter-spacing: -2px; margin-top: 10px;}
 .color-red {color: #FF0000;}
 .clear {clear: both;}
+a {color: #ddd;}
+a:hover {text-decoration: none; color: #fff;}
 
 
 /* Header*/
@@ -41,27 +43,32 @@ div.form-group-navbar-nav:focus {box-shadow: none;}
 
 /* EVENTOS */
 .events {margin-top:15px; margin-bottom:15px;}
+.events a {display: block;}
 
-.event-main img{position: relative; }
-.event-secondary {height: 80px; background: #DDDDDD; padding-left: 0; padding-right: 0;}
-.event-secondary-date {background: #d90000; color: #fff; font-size: 2.4em; padding-top: 0.2em; text-align: center; line-height: 110%}
-.nowaday .event-secondary-date {background: #339933; padding-top: 0.55em;}
+.event-main img{position: relative; display: inline-block; }
+.event-secondary {min-height: 95px; background: #DDDDDD; padding-left: 0; padding-right: 0;}
+.event-secondary-date {background: #d90000; color: #fff; font-size: 2.4em; padding-top:  0.45em; text-align: center; line-height: 110%}
+.nowaday .event-secondary-date {background: #339933; padding-top: 0.8em;}
 .event-secondary-date p {line-height: 30%; margin-bottom: 0;}
 .event-secondary-date p small {font-size: 0.6em;text-align: center; margin-bottom: 0; line-height: 100%}
 .event-secondary-description {padding: 0.3em 0.6em}
-.event-secondary-description h3 {font-size: 1.3em; margin: 0; padding: 0; margin-bottom: 3px; line-height: 100%; color: #D90000;}
+.event-secondary-description h3 {margin: 0; padding: 0; margin-bottom: 3px; line-height: 100%; color: #D90000;}
 .nowaday .event-secondary-description h3 {color: #339933;}
 .event-secondary-description p {font-size: 1.1em; line-height: 100%; margin: 0; display: block;}
 .event-secondary-description p small {font-size: 0.7em; padding-top: 0.3em; display: block; margin-bottom: 0;}
 
-.details {background: red; bottom: 0; color: #fff; display: block; opacity: 0.8; padding: 5px 10px; position: absolute;}
+.details {position:absolute; width:100%; z-index:10; left: 0px; bottom: 0px; padding: 0 15px;}
 .details h2,.details h3, .details h4, .details p {margin: 0; padding: 0;}
 
-.event-description {display: block; float: left;}
-.event-description h2 {font-size: 2em;}
-.event-description h3 {font-size: 1em;}
-.event-date {display: block; float: left;}
+.event-description, .event-date {opacity: 0.9; background: #d90000; display: block; float: left;}
+.event-description {float: left; padding: 5px 10px;  min-height: 95px; width: 80%;}
+.event-description h2 {font-size: 1.4em;}
+.event-description h3, .event-secondary-description h3 {font-size: 1.2em;}
+.event-description h4 {font-size: 1em; margin-top: 3px;}
+.event-date {width: 20%;}
 p time{display: block; font}
+
+
 
 
 
@@ -74,6 +81,6 @@ p time{display: block; font}
 
 .navbar-nav {margin: 0.5px -15px;}*/
 
-footer {height: 80px; background: #ccc; margin-top: 20px;}
+footer {background: #ccc; margin-top: 20px;}
 footer div.container {text-align: center;}
-footer div.container p {margin-top: 30px; color: #999; font-size: 18px;}
+footer div.container p {margin: 1.5em 0; color: #999; font-size: 18px;}
