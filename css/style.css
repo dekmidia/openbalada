@@ -12,6 +12,7 @@ body, h1, h2, h3, h4, h5, p, span, strong {font-family: 'SegoeUI', arial, verdan
 
 .bg-blue1, .bg-blue1:hover {background:#00CCCC!important; color: #fff;}
 .bg-blue2, .bg-blue2:hover {background: #0099CC!important; color: #fff;}
+.bg-blue3, .bg-blue3:hover {background: #5F84F2!important; color: #fff;}
 .bg-green1, .bg-green1:hover {background: #8CBF26!important;}
 .bg-green2, .bg-green2:hover {background: #00ABA9!important;}
 .bg-green3, .bg-green3:hover {background: #339933!important;}
@@ -99,8 +100,8 @@ p time{display: block; font}
 .box-info p strong {display: block; font-size: 20px;}
 .maps-pageevento {margin-top: 25px;}
 .maps-pageevento iframe {width: 100%; height: 250px;}
-.box-cinza {display: block; background: #ddd; padding: 5px 10px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; color: #990099;}
-.box-cinza a {color: #990099;}
+.box-cinza {display: block; background: #eee; padding: 5px 10px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.box-cinza, .box-cinza a {color: #5F84F2;}
 .descricao-maps p{margin-bottom: 5px;}
 
 /* Icons */
