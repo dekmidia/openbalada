@@ -21,6 +21,7 @@ body, h1, h2, h3, h4, h5, p, span, strong {font-family: 'SegoeUI', arial, verdan
 a {color: #ddd;}
 a:hover {text-decoration: none; color: #fff;}
 .text-uppercase {text-transform: uppercase;}
+.margin-right-none {margin-right: 0;} 
 
 
 /* Header*/
@@ -61,7 +62,8 @@ div.form-group-navbar-nav:focus {box-shadow: none;}
 .event-secondary-description p small {font-size: 0.7em; padding-top: 0.3em; display: block; margin-bottom: 0;}
 
 .details {position:absolute; width:100%; z-index:10; left: 0px; bottom: 0px; padding: 0 15px;}
-.details h2,.details h3, .details h4, .details p {margin: 0; padding: 0;}
+.details-page {position:absolute; width:100%; z-index:10; left: 0px; bottom: 0px; padding: 0 15px;}
+.details h2, .details-page h2, .details h3, .details-page h3, .details h4, .details-page h4, .details p, .details-page p {margin: 0; padding: 0;}
 
 .event-description, .event-date {opacity: 0.9; background: #d90000; display: block; float: left;}
 .event-main-nowaday .event-description,
