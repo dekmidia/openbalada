@@ -101,7 +101,7 @@ p time{display: block; font}
 .maps-pageevento {margin-top: 25px;}
 .maps-pageevento iframe {width: 100%; height: 250px;}
 .box-cinza {display: block; background: #eee; padding: 5px 10px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
-.box-cinza, .box-cinza a {color: #5F84F2;}
+.box-cinza, .box-cinza a {color: #00aba9;}
 .descricao-maps p{margin-bottom: 5px;}
 
 /* Icons */
