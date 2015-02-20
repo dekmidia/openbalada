@@ -1,0 +1,120 @@
+/*
+Theme Name: OpenBalada
+Theme URI: http://www.openbalada.com.br/
+Description: Tema desenvovido para o site openbalada.com.br.
+Author: DekMídia Soluções Digitais: Desenvolvedores - Cristiano Pereira / Eugênio Ribeiro / Douglas Rodolfo
+Version: 2.0
+*/
+
+/*GLOBAIS*/
+body {background: #F2F2F2;}
+body, h1, h2, h3, h4, h5, p, span, strong {font-family: 'SegoeUI', arial, verdana;}
+
+.bg-blue1, .bg-blue1:hover {background:#00CCCC!important; color: #fff;}
+.bg-blue2, .bg-blue2:hover {background: #0099CC!important; color: #fff;}
+.bg-blue3, .bg-blue3:hover {background: #5F84F2!important; color: #fff;}
+.bg-green1, .bg-green1:hover {background: #8CBF26!important;}
+.bg-green2, .bg-green2:hover {background: #00ABA9!important;}
+.bg-green3, .bg-green3:hover {background: #339933!important;}
+.bg-green4, .bg-green4:hover {background: #CBDA25!important;}
+.bg-gray, .bg-gray:hover {background: #999!important;}
+.bg-orange, .bg-orange:hover {background: #F09609!important;}
+.bg-orange2, .bg-orange2:hover {background: #FF6600!important;}
+.bg-pink, .bg-pink:hover {background: #CC0066!important; color: #fff;}
+.bg-purple, .bg-purple:hover {background: #5D049C!important; color: #fff;}
+.bg-purple2, .bg-purple2:hover {background: #990099!important; color: #fff;}
+.bg-red, .bg-red:hover {background: #D90000!important;}
+.bg-red2, .bg-red2:hover {background: #FE0000!important;}
+
+.titulo-page {color: #FF0000; font-size: 2.8em;; letter-spacing: -2px; margin-top: 10px;}
+.color-red {color: #FF0000;}
+.clear {clear: both;}
+a {color: #ddd;}
+a:hover {text-decoration: none; color: #fff;}
+.text-uppercase {text-transform: uppercase;}
+.margin-right-none {margin-right: 0;} 
+
+
+/* Header*/
+img.open-logo {padding: 20px 0;}
+.input-search {text-align:left!important; background: #cc0066 url("../img/icons/search-icon.png")!important; background-repeat:no-repeat!important; background-position: 95% center!important;}
+
+
+/* NAV */
+div#bs-example-navbar-collapse-1 ul {margin: 0; padding: 0}
+div#bs-example-navbar-collapse-1 ul li {margin: 0; padding: 0}
+div.navbar-collapse {padding-left: 0; padding-right: 0; }
+.navbar-default .navbar-nav > li > a {color: #FFF; text-align: center;}
+.navbar-nav > li > a {padding-bottom: 16px; padding-top: 10px; font-size: 1.6em; letter-spacing: -1px; display: block;}
+.navbar-nav > li > a:hover{background: #CBDA25!important; color: #0246B9!important;}
+.navbar-nav li form div.form-group {margin-bottom: 0;}
+.navbar-default {background: #ddd; border: none;}
+.navbar {margin-bottom: 10px; min-height: 40px;}
+div.form-group-navbar-nav {height: 46px;}
+.input-search {height: auto; font-size: 22px; background: none; color: #fff; border-radius: 0;}
+div.form-group-navbar-nav input {border: none; padding: 7px 40px 7px 5px; text-align: center;}
+div.form-group-navbar-nav:focus {box-shadow: none;}
+
+/* EVENTOS */
+.events {margin-top:15px; margin-bottom:15px;}
+.events a {display: block;}
+
+.event-main img{position: relative; display: inline-block; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.event-secondary {min-height: 95px; background: #DDDDDD; padding-left: 0; padding-right: 0;}
+.event-secondary-date {background: #d90000; color: #fff; font-size: 2.4em; padding-top:  0.65em; text-align: center; line-height: 110%}
+.nowaday .event-secondary-date {background: #339933; padding-top: 1em;}
+.event-secondary-date p {line-height: 70%; margin-bottom: 0;}
+.event-secondary-date p small {font-size: 0.6em;text-align: center; margin-bottom: 0; line-height: 100%}
+.event-secondary-description {padding: 0.3em 0.6em}
+.event-secondary-description h3 {margin: 0; padding: 0; margin-bottom: 3px; line-height: 100%; color: #D90000;}
+.event-secondary-description p {color: #666;}
+.event-secondary-description:hover p {color: #222;}
+.nowaday .event-secondary-description h3 {color: #339933;}
+.event-secondary-description p {font-size: 1.1em; line-height: 100%; margin: 0; display: block;}
+.event-secondary-description p small {font-size: 0.7em; padding-top: 0.3em; display: block; margin-bottom: 0;}
+
+.details {position:absolute; width:100%; z-index:10; left: 0px; bottom: 0px; padding: 0 15px;}
+.details-page {position:absolute; width:100%; z-index:10; left: 0px; bottom: 0px; padding: 0 15px;}
+.details h2, .details-page h2, .details h3, .details-page h3, .details h4, .details-page h4, .details p, .details-page p {margin: 0; padding: 0;}
+
+.event-description, .event-date {opacity: 0.9; background: #d90000; display: block; float: left;}
+.event-main-nowaday .event-description,
+.event-main-nowaday .event-date {opacity: 0.9; background: #339933; display: block; float: left;}
+.event-description {float: left; padding: 5px 10px;  min-height: 95px; width: 80%;}
+.event-description h2 {font-size: 1.4em;}
+.event-description h3, .event-secondary-description h3 {font-size: 1.2em;}
+.event-description h4 {font-size: 1em; margin-top: 3px;}
+.event-date {width: 20%;}
+p time{display: block; font}
+
+/* Page Evento */
+.descricao-pageevento {min-height: 233px;}
+.descricao-pageevento h2 {font-size: 32px; margin-top: 10px;}
+.descricao-pageevento p {font-size: 16px; }
+.descricao-pageevento p small {color: #888; margin-left: 5px;}
+.details-pageevento{margin: 10px;}
+.details-pageevento .event-date{border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding-top: 0.4em; width: 25%;}
+.details-pageevento .event-date p{font-size: 1.3em;}
+.box-info {display: block; padding: 10px; background: #d90000; text-align: center; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; margin: 10px 0}
+.box-info p {color: #fff; font-size: 18px; margin: 0;}
+.box-info p strong {display: block; font-size: 20px;}
+.maps-pageevento {margin-top: 25px;}
+.maps-pageevento iframe {width: 100%; height: 250px;}
+.box-cinza {display: block; background: #eee; padding: 5px 10px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.box-cinza, .box-cinza a {color: #00aba9;}
+.descricao-maps p{margin-bottom: 5px;}
+
+/* Icons */
+.icons-sprite{display: block; height: 32px; width: 32px; background: url(../img/icons/sprite-icons.png); float: left;}
+.icon-date{background-position: -68px -2px;}
+.icon-hour{background-position: -2px -2px;}
+.icon-value{background-position: -2px -36px;}
+.icon-rating{background-position: -35px -36px;}
+.icon-maps{background-position: -35px -2px;}
+.icon-maps{background-position: -35px -2px;}
+
+
+footer {background: #ccc; margin-top: 20px;}
+footer div.container {text-align: center;}
+footer div.container p {margin: 1.5em 0; color: #999; font-size: 18px;}
+footer img.projeto-dekmidia {display: block; margin: auto; margin-top: 1.4em;}
