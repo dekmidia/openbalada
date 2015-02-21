@@ -1,4 +1,5 @@
-<?php include 'header.php';?>      
+<?php get_header();?>
+
 <section class="row clearfix margin-right-none"> 
   <div class="col-md-12 col-sm-12 col-xs-12">
     <h1 class="titulo-page">Evento</h1>
@@ -73,4 +74,5 @@
   </div>                      
 </section>                 
 </div><!-- /container -->
-<?php include 'footer.php' ?>
+
+<?php get_footer();?>

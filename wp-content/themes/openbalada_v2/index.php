@@ -1,11 +1,12 @@
-<?php include 'header.php';?>
+<?php get_header();?>
+
 <section class="row"> 
   <div class="col-md-12 col-sm-12 col-xs-12">
     <h1 class="titulo-page">Agenda</h1>
   </div>
   <article class="col-md-6 column events event-main">
     <a href="evento.htm">
-      <img class="img-responsive center-block" src="img/upload/festa-01.jpg" alt="evento 01">
+      <img class="img-responsive center-block" src="<?php bloginfo('template_directory');?>/img/upload/festa-01.jpg" alt="evento 01">
       <div class="details">                
         <div class="event-description">
           <h2>NOME DA FESTA</h2>
@@ -22,7 +23,7 @@
   </article>          
   <article class="col-md-3 events event-main-nowaday">
     <a href="evento.htm">
-      <img src="img/upload/festa-04.jpg" alt="" class="img-responsive">
+      <img src="<?php bloginfo('template_directory'); ?>/img/upload/festa-04.jpg" alt="" class="img-responsive">
       <div class="details">                
         <div class="event-description">
           <h2>NOME DA FESTA</h2>
@@ -39,7 +40,7 @@
   </article>          
   <article class="col-md-3 events">
     <a href="evento.htm">
-      <img src="img/upload/festa-04.jpg" alt="" class="img-responsive">
+      <img src="<?php bloginfo('template_directory'); ?>/img/upload/festa-04.jpg" alt="" class="img-responsive">
       <div class="details">                
         <div class="event-description">
           <h2>NOME DA FESTA</h2>
@@ -56,7 +57,7 @@
   </article>          
   <article class="col-md-3 events">
     <a href="evento.htm">
-      <img src="img/upload/festa-02.jpg" alt="" class="img-responsive">
+      <img src="<?php bloginfo('template_directory'); ?>/img/upload/festa-02.jpg" alt="" class="img-responsive">
       <div class="details">                
         <div class="event-description">
           <h2>NOME DA FESTA</h2>
@@ -73,7 +74,7 @@
   </article>          
   <article class="col-md-3 events">
     <a href="evento.htm">
-      <img src="img/upload/festa-03.jpg" alt="" class="img-responsive">
+      <img src="<?php bloginfo('template_directory'); ?>/img/upload/festa-03.jpg" alt="" class="img-responsive">
       <div class="details">                
         <div class="event-description">
           <h2>NOME DA FESTA</h2>
@@ -93,7 +94,7 @@
 <section class="row"> 
   <!-- PRIMEIRA FILEIRA EVENTOS SECUNDÁRIOS -->
   <!-- sm xs md -->
-  
+
   <article class="col-md-3 col-sm-12 col-xs-12 nowaday events">
     <a href="evento.htm">
       <div class="teste col-md-3 col-sm-3 col-xs-3 event-secondary event-secondary-date">
@@ -308,4 +309,5 @@
 <div class="clearfix"></div>            
 </section>
 </div><!-- /container -->
-<?php include 'footer.php' ?>
+
+<?php get_footer();?>
