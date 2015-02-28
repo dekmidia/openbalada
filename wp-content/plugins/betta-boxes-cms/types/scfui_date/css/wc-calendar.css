@@ -1,0 +1,48 @@
+div#wc-calendar {
+	position: absolute;
+	width: 210px;
+	background: #fff;
+	border: 1px solid #f00;
+	z-index:999;
+}
+
+div#wc-calendar tr.wc-cal-header {
+	text-align: center;
+	font-weight: bold;
+}
+
+div#wc-calendar tr.wc-cal-footer {
+	text-align: center;
+	font-weight: bold;
+}
+
+div#wc-calendar td.empty {
+	background: #999;
+	width: 30px;
+	text-align:center;
+}
+
+div#wc-calendar td.valid-day {
+	width: 30px;
+	text-align:center;
+}
+
+div#wc-calendar td.weekday {
+	background: #ccc;
+}
+
+div#wc-calendar td.weekend {
+	background: #ffc;
+}
+
+div#wc-calendar td.today {
+	border: 1px solid #f00;
+}
+
+div#wc-calendar td.clickable {
+	cursor: pointer;
+}
+
+div#wc-calendar td.border {
+	border: 1px solid #000;
+}

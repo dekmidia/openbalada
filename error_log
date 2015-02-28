@@ -1,0 +1,82 @@
+[21-Feb-2015 04:37:59] PHP Fatal error:  Class 'wp_bootstrap_navwalker' not found in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/header.php on line 112
+[21-Feb-2015 04:38:18] PHP Fatal error:  Class 'wp_bootstrap_navwalker' not found in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/header.php on line 112
+[21-Feb-2015 04:50:20] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/functions.php on line 706
+[21-Feb-2015 04:51:31] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/functions.php on line 708
+[21-Feb-2015 04:54:31] PHP Parse error:  syntax error, unexpected '}' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/functions.php on line 715
+[21-Feb-2015 22:41:53 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 65
+[21-Feb-2015 22:44:02 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 65
+[21-Feb-2015 22:47:39 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 65
+[21-Feb-2015 22:48:23 UTC] PHP Parse error:  syntax error, unexpected T_ENDWHILE in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 66
+[21-Feb-2015 22:50:33 UTC] PHP Parse error:  syntax error, unexpected T_ENDIF in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 82
+[21-Feb-2015 22:51:04 UTC] PHP Parse error:  syntax error, unexpected T_ELSE in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 83
+[21-Feb-2015 22:53:40 UTC] PHP Parse error:  syntax error, unexpected T_ELSE in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 88
+[21-Feb-2015 22:54:45 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 48
+[21-Feb-2015 22:57:27 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 26
+[21-Feb-2015 23:01:11 UTC] PHP Parse error:  syntax error, unexpected T_ELSE in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 38
+[21-Feb-2015 23:02:03 UTC] PHP Parse error:  syntax error, unexpected T_ELSE in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 38
+[21-Feb-2015 23:10:24 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 26
+[21-Feb-2015 23:28:29 UTC] PHP Parse error:  syntax error, unexpected T_ENDIF, expecting ',' or ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 35
+[21-Feb-2015 23:38:46 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 30
+[21-Feb-2015 23:41:25 UTC] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 30
+[21-Feb-2015 23:47:19 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 32
+[21-Feb-2015 23:52:20 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 32
+[22-Feb-2015 02:54:10 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 46
+[22-Feb-2015 03:18:53 UTC] PHP Parse error:  syntax error, unexpected T_ELSE in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 102
+[22-Feb-2015 03:19:44 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 102
+[22-Feb-2015 03:21:26 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 101
+[22-Feb-2015 21:12:32 UTC] PHP Parse error:  syntax error, unexpected T_STRING, expecting ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 123
+[22-Feb-2015 21:13:49 UTC] PHP Parse error:  syntax error, unexpected T_STRING, expecting ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 80
+[22-Feb-2015 21:15:58 UTC] PHP Parse error:  syntax error, unexpected T_STRING, expecting ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 80
+[22-Feb-2015 21:24:58 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 23
+[22-Feb-2015 21:30:15 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 21
+[22-Feb-2015 21:33:41 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 17
+[22-Feb-2015 21:36:10 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 18
+[22-Feb-2015 22:13:20 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 15
+[22-Feb-2015 23:21:02 UTC] PHP Parse error:  syntax error, unexpected $end in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 234
+[23-Feb-2015 00:13:25 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 193
+[23-Feb-2015 00:28:14 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 208
+[23-Feb-2015 00:29:10 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 208
+[23-Feb-2015 00:35:48 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 208
+[23-Feb-2015 01:13:04 UTC] PHP Parse error:  syntax error, unexpected T_ENDWHILE in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 91
+[23-Feb-2015 01:15:11 UTC] PHP Parse error:  syntax error, unexpected T_ENDWHILE in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 91
+[23-Feb-2015 01:16:58 UTC] PHP Parse error:  syntax error, unexpected T_ENDWHILE in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 179
+[22-Feb-2015 21:35:12 America/New_York] PHP Fatal error:  Call to undefined function tehc_content() in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 72
+[23-Feb-2015 02:53:43 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 80
+[23-Feb-2015 21:05:12 UTC] PHP Parse error:  syntax error, unexpected $end in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 150
+[23-Feb-2015 21:08:25 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 8
+[23-Feb-2015 21:09:33 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 7
+[23-Feb-2015 21:10:51 UTC] PHP Parse error:  syntax error, unexpected $end in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 152
+[23-Feb-2015 21:16:05 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 6
+[23-Feb-2015 21:21:48 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 7
+[23-Feb-2015 21:22:03 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 7
+[23-Feb-2015 21:22:28 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 7
+[23-Feb-2015 22:01:41 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 10
+[23-Feb-2015 17:18:32 America/New_York] PHP Fatal error:  Function name must be a string in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 276
+[23-Feb-2015 17:18:49 America/New_York] PHP Fatal error:  Function name must be a string in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 276
+[23-Feb-2015 17:19:25 America/New_York] PHP Fatal error:  Function name must be a string in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 276
+[23-Feb-2015 17:19:31 America/New_York] PHP Fatal error:  Function name must be a string in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 276
+[24-Feb-2015 01:08:19 UTC] PHP Parse error:  syntax error, unexpected T_ENDWHILE in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 92
+[25-Feb-2015 19:51:59 UTC] PHP Parse error:  syntax error, unexpected $end in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 153
+[25-Feb-2015 20:34:36 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 123
+[25-Feb-2015 20:35:11 UTC] PHP Parse error:  syntax error, unexpected T_ENDIF in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 135
+[25-Feb-2015 20:35:41 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 146
+[25-Feb-2015 20:36:02 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 148
+[25-Feb-2015 20:40:15 UTC] PHP Parse error:  syntax error, unexpected $end in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 135
+[25-Feb-2015 20:49:32 UTC] PHP Parse error:  syntax error, unexpected $end in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 153
+[25-Feb-2015 21:38:30 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 289
+[25-Feb-2015 21:38:40 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 289
+[25-Feb-2015 21:42:45 UTC] PHP Parse error:  syntax error, unexpected T_BOOLEAN_AND in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 289
+[25-Feb-2015 23:56:33 UTC] PHP Parse error:  syntax error, unexpected $end in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/search.php on line 149
+[25-Feb-2015 23:57:57 UTC] PHP Parse error:  syntax error, unexpected $end in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/search.php on line 151
+[26-Feb-2015 00:02:59 UTC] PHP Parse error:  syntax error, unexpected $end in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/search.php on line 152
+[26-Feb-2015 00:14:08 UTC] PHP Parse error:  syntax error, unexpected $end in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/search.php on line 148
+[26-Feb-2015 00:14:53 UTC] PHP Fatal error:  Call to undefined function quequery_posts() in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/search.php on line 29
+[26-Feb-2015 00:25:31 UTC] PHP Parse error:  syntax error, unexpected '*' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/search.php on line 26
+[26-Feb-2015 13:03:06 UTC] PHP Parse error:  syntax error, unexpected $end in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/page.php on line 28
+[27-Feb-2015 14:15:04 UTC] PHP Parse error:  syntax error, unexpected T_ECHO in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 89
+[27-Feb-2015 14:15:43 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 89
+[27-Feb-2015 14:16:26 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ':' or ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 89
+[27-Feb-2015 15:02:09 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ':' or ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 281
+[27-Feb-2015 15:02:26 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ':' or ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 281
+[27-Feb-2015 15:02:28 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ':' or ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 281
+[27-Feb-2015 15:09:33 UTC] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 155

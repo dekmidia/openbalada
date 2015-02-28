@@ -1,0 +1,17 @@
+#scfui-fields-container li div.scfui-error { /* copied from WP default, as you cannot position the actual div where needed */
+	margin: 5px 10px 15px 10px;
+	background-color: #FFEBE8;
+	border-color: #CC0000;
+	border-radius: 3px 3px 3px 3px;
+	border-style: solid;
+	border-width: 1px;
+	padding: 0 0.6em;
+}
+
+.scfui-field-placeholder { /* used when dragging fields */
+	border-width: 1px;
+	border-style: dashed;
+	margin-bottom: 20px;
+	border-color:#bbb;
+	background-color:#f5f5f5;
+}

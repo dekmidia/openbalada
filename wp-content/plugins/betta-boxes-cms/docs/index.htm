@@ -1,0 +1,188 @@
+<html>
+<head>
+	<title>Betta Boxes CMS Documentation</title>
+	
+	<style>
+		p, pre {
+			margin: 2px, 8px;
+		}
+		
+		ol {
+			margin: 2px;
+		}
+		
+		h2 {
+			margin-bottom: 5px;
+		}
+		
+		h3,h4 {
+			margin-bottom: 3px;
+		}
+		
+		.indent {
+			margin-left: 15px;
+		}
+	</style>
+</head>
+<body>
+
+<h2 id="overview">Overview</h2>
+<p>
+	Welcome to the Betta Boxes CMS plugin. This plugin turns your WordPress Blog into a powerful CMS, without the need to get down and dirty in the source code.
+	Betta Boxes gives you a clean, simple administration interface to create custom fields, and link them to Posts, Pages, and any Custom Post Types you have!
+</p>
+<p>
+	Betta Boxes uses the default WordPress functionality of 'post meta'. This means the plugin works with WordPress, rather than fighting against it.
+</p>
+
+<h2 id="installation">Installation</h2>
+<ol>
+	<li>Unzip the plugin to your <code>wp-content/plugins/</code> directory.</li>
+	<li>Activate the plugin through the WordPress 'Plugins' menu in the administration area.</li>
+	<li>This will create a new menu item under 'settings' in the WordPress administration area, labeled <strong>Betta Boxes</strong>.</li>
+</ol>
+
+<h2 id="create-meta-box">Creating Meta Boxes and Custom Fields</h2>
+<p>
+	Once you have activated the plugin via the WordPress plugin manager, you will see a new item under the 'settings' section of the administration area labeled
+	<strong>Betta Boxes</strong><br />
+	All the options for creating and managing Meta Boxes and Custom Fields are under here.
+</p>
+
+<p>
+	Click the 'Add New' link to create a meta box.<br />
+	You need to add a Title, and choose which post type to show the box in. <strong>Posts, pages</strong> and any <strong>custom post types</strong>
+	declared will be available for selection.
+</p>
+<p>
+	Click 'Add Field' to add a new custom field inside the meta box. You can choose from a number of types (see below). Each custom field requires you give it
+	a label and a unique meta key. The label is used as the fields label when you add/edit a post type item. The meta key is important, and is used to identify the field
+	in the database, and in calls to <code><a target="_blank" href="http://codex.wordpress.org/Function_Reference/get_post_meta">get_post_meta()</a></code> to show the
+	data in your front end templates.<br />
+	You may add as many custom fields to the meta box as you want. You can drag them around to re-order them.
+</p>
+
+<p>
+	Once you save the meta box, it will appear on the selected post type, when you add or edit an item of that type.
+</p>
+
+<h2>Show Custom Fields in Templates</h2>
+<p>
+	All the custom fields are saved with the WordPress function
+	<code><a target="_blank" href="http://codex.wordpress.org/Function_Reference/add_post_meta">add_post_meta()</a></code>. This makes getting the data in your templates
+	very simple. Simply call
+	<code><a target="_blank" href="http://codex.wordpress.org/Function_Reference/get_post_meta">get_post_meta()</a></code> using the <code>meta key</code> you specified
+	when creating the custom field.
+</p>
+<p>
+	For example, if you created a <code>short text</code> field with the meta key <code>my-text</code>, you would call it like this in your template:<br />
+<pre>
+&lt;?php echo get_post_meta(get_the_ID(), 'my-text', true); ?&gt;
+</pre>
+
+See more specific examples below.
+</p>
+
+<h2 id="types-list">Types</h2>
+<p>
+	Here is a list of all the custom field types, how they are saved in the database, and an example of 2 of using them in your templates.<br />
+	For the examples, the code assumes you have used the meta key <code>the-meta-key</code> for the field. Just replace this with your actual meta key.
+</p>
+
+<div class="indent">
+	<p>
+		<strong>Short Text</strong><br />
+		Saved in the database as the inputed text.<br />
+<pre>
+Some short data: &lt;?php echo get_post_meta(get_the_ID(), 'the-meta-key', true); ?&gt;
+</pre>
+	</p>
+	
+	<p>
+		<strong>Long Text</strong><br />
+		Saved in the database as the inputed text.<br />
+<pre>
+Postal Address: &lt;?php echo nl2br(get_post_meta(get_the_ID(), 'the-meta-key', true)); /*nl2br makes the [enter] key into a line break in HMTL*/ ?&gt;
+</pre>
+	</p>
+
+	<p>
+		<strong>Checkboxes</strong><br />
+		Saved in the database as an array of the selected elements.<br />
+<pre>
+&lt;?php
+//show all checked
+$checked = get_post_meta(get_the_ID(), 'the-meta-key', true);
+foreach ((array)$checked as $key=&gt;$val) {
+	echo $val.'&lt;br /&gt;';
+}
+
+//check specific options are checked
+$checked = get_post_meta(get_the_ID(), 'the-meta-key', true);
+if($checked['Some option']) {
+	echo '&lt;strong&gt;Some option&lt;/strong&gt; was checked&lt;br /&gt;';
+}else{
+	echo '&lt;strong&gt;Some option&lt;/strong&gt; was not checked&lt;br /&gt;';
+}
+
+if($checked['Another option']) {
+	echo '&lt;strong&gt;Another option&lt;/strong&gt; was checked&lt;br /&gt;';
+}else{
+	echo '&lt;strong&gt;Another option&lt;/strong&gt; was not checked&lt;br /&gt;';
+}
+?&gt;
+</pre>
+	</p>
+	
+	<p>
+		<strong>Radio buttons</strong><br />
+		Saved in the database as the selected option.<br />
+<pre>
+Selected: &lt;?php echo get_post_meta(get_the_ID(), 'the-meta-key', true); ?&gt;
+</pre>
+	</p>
+
+	<p>
+		<strong>Drop Down</strong><br />
+		Saved in the database as the selected option.<br />
+<pre>
+Selected: &lt;?php echo get_post_meta(get_the_ID(), 'the-meta-key', true); ?&gt;
+</pre>
+	</p>
+
+	<p>
+		<strong>HTML WYSIWYG</strong><br />
+		Saved in the database as the HTML source.
+<pre>
+HTML: &lt;?php echo get_post_meta(get_the_ID(), 'the-meta-key', true); ?&gt;
+</pre>
+	</p>
+	
+	<p>
+		<strong>Color</strong><br />
+		Saved in the database WITHOUT the hash.
+<pre>
+&lt;div style="background-color:#&lt;?php echo get_post_meta(get_the_ID(), 'the-meta-key', true); ?&gt;">Some now colored div&lt;/div&gt;
+</pre>
+	</p>
+	
+	<p>
+		<strong>Date</strong><br />
+		Saved in the database in the format YYYY-MM-DD.
+<pre>
+Date like YYYY-MM-DD: &lt;?php echo get_post_meta(get_the_ID(), 'the-meta-key', true); ?&gt;<br />
+Date like 17 August 2011: &lt;?php echo date('j F Y', strtotime(get_post_meta(get_the_ID(), 'the-meta-key', true))); /*Using PHP date format, more here: http://www.php.net/manual/en/function.date.php */ ?&gt;
+</pre>
+	</p>
+	
+	<p>
+		<strong>Time</strong><br />
+		Saved in the database in the format HH:MM:SS
+<pre>
+Start Time: &lt;?php echo get_post_meta(get_the_ID(), 'the-meta-key', true); ?&gt;
+</pre>
+	</p>
+</div>
+
+</body>
+</html>

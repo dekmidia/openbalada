@@ -1,7 +1,9 @@
-    <footer> 
+    <div class="clear"></div>
+    <footer class="clearfix"> 
     	<div class="container">
     		<div class="row">
-    			<p><strong><span class="color-red">Open</span>Balada</strong>  |  Todos os direitos reservados</p>
+    			<p><img class="logo-footer" src="<?php bloginfo('template_directory'); ?>/img/openbalada-logo-footer.png" alt="OpenBalada">  |  Todos os direitos reservados</p>
+                <p><small>Version 0.1.22</small></p>
     		</div>  
     	</div>       
     </footer>
