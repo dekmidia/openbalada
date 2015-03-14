@@ -99,14 +99,14 @@ article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h3,
 article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h4 {margin: 0; padding: 0;}
 article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h2{font-size: 1.4em; text-transform: uppercase; font-weight: bold; margin-bottom: 5px;}
 article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h3{font-size: 1.2em; margin-bottom: 5px;} 
-article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h4{font-size: 1.0em; margin-bottom: 5px;} 
+article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h4{font-size: 1.0em; margin-bottom: 5px; font-weight: bold;} 
 
 article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h2,
 article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h3,
 article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h4 {margin: 0; padding: 0;}
 article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h2 {font-size: 1.2em; text-transform: uppercase; font-weight: bold; margin-bottom: 5px;}
 article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h3 {font-size: 1.0em; margin-bottom: 5px;}
-article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h4 {font-size: 0.8em; margin-bottom: 5px;}
+article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h4 {font-size: 0.8em; margin-bottom: 5px; font-weight: bold;}
 
 article.eventos .detalhes .evento-descricao-comum {padding: 5px 10px; background: #DDDDDD;}
 article.eventos .detalhes .evento-descricao-comum:hover {background: #CCCCCC;}
@@ -116,7 +116,7 @@ article.eventos .detalhes .evento-descricao-comum h3,
 article.eventos .detalhes .evento-descricao-comum h4{margin: 0; padding: 0; color:#777;/* color: #F2F2F2 */}
 article.eventos .detalhes .evento-descricao-comum h2{font-size: 1.2em; margin-bottom: 5px; text-transform: uppercase; font-weight: bold;}
 article.eventos .detalhes .evento-descricao-comum h3{font-size: 1.0em; margin-bottom: 5px;}
-article.eventos .detalhes .evento-descricao-comum h4{font-size: 0.8em; margin-bottom: 5px;}
+article.eventos .detalhes .evento-descricao-comum h4{font-size: 0.8em; margin-bottom: 5px; font-weight: bold;}
 
 article.eventos .detalhes .detalhes-bloco .evento-data{text-align: center; line-height: 110%}
 article.eventos .detalhes .detalhes-bloco .evento-data p,
