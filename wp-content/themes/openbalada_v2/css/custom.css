@@ -88,7 +88,7 @@ iframe {width: 100%;}
 
 article.eventos{margin-top:15px; margin-bottom:15px;}
 article.eventos a{display: block;}
-article.eventos a img{display: block;position: relative; display: inline-block; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+article.eventos a img{display: block;position: relative; display: inline-block;}
 article.eventos .detalhes{display: block; position: relative; background: #d90000;}
 .detalhes h1, .detalhes h2, .detalhes h3, .detalhes h4, .detalhes h5 {color: #F2F2F2;}
 .detalhes:hover .detalhes-bloco h1, .detalhes:hover .detalhes-bloco h2, .detalhes:hover .detalhes-bloco h3, .detalhes:hover .detalhes-bloco h4, .detalhes:hover .detalhes-bloco h5 {color: #FFFFFF;}
@@ -100,7 +100,6 @@ article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h4 {margin
 article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h2{font-size: 1.4em; text-transform: uppercase; font-weight: bold; margin-bottom: 5px;}
 article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h3{font-size: 1.2em; margin-bottom: 5px;} 
 article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h4{font-size: 1.0em; margin-bottom: 5px;} 
-
 
 article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h2,
 article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h3,
@@ -139,10 +138,17 @@ div.display-table .table-header{height: 25%; display: table-row;}
 div.display-table .table-content{height: 50%; vertical-align: middle; text-align: center; display: table-row;}
 div.display-table .table-footer{height: 25%; display: table-row;}
 
-
 /* Page Evento */
+.eventos-single-page {position: relative; margin-bottom: 25px;}
+.eventos-single-page img {display: block;position: relative; display: inline-block; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; margin-top: 5px;}
+.eventos-single-page .detalhes {position: absolute;bottom:0; margin:15px; }
+.eventos-single-page .detalhes .detalhes-bloco {background: #d90000; padding: 10px 15px 15px 15px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align: center;}
+.eventos-single-page .detalhes .detalhes-bloco p {font-size: 2.2em; color: #fff; line-height: 100%; margin: 0;}
+.eventos-single-page .detalhes .detalhes-bloco p small {font-size: 0.6em!important; display: block; text-transform: uppercase; line-height: 100%;}
+
+
 /*.descricao-pageevento {min-height: 233px;}*/
-.descricao-pageevento h2 {font-size: 32px; margin-top: 10px;}
+.descricao-pageevento h2 {font-size: 32px; margin-top: 0px;}
 .descricao-pageevento p {font-size: 16px; }
 .descricao-pageevento p small {color: #888; margin-left: 5px;}
 .details-pageevento{margin: 10px;}

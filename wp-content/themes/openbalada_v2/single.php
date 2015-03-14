@@ -36,7 +36,6 @@ $dataSistema = date( 'Y-m-d' );
           <?php endif; ?>
           </div><!-- evento-data -->
           <div class="clear"></div>
-        <div class="clear"></div>
       </div>
       <div class="clearfix"></div>
     </div><!-- /detalhes -->
