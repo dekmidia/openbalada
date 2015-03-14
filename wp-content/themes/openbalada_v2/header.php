@@ -55,7 +55,7 @@
               <img class="img-responsive center-block open-logo visible-xs visible-sm" src="<?php bloginfo('template_directory'); ?>/img/openbalada-logo.png" alt="OpenBalada">
             </a>
           </div>
-          <div class="col-md-8 column">
+          <div class="col-md-8 column adsense hidden-xs hidden-sm">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
               <!-- Validação OpenBalada -->
               <ins class="adsbygoogle"

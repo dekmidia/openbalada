@@ -163,7 +163,7 @@ wp_reset_query();?>
   <div class="clearfix"></div>            
 </section>
 
-<?php /* ------------- EVENTO SECUNDÁRIO; ------------- */?>
+<?php /* ------------- EVENTO COMUM ------------- */?>
 
 <section class="row"> 
  <?php

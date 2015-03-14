@@ -38,16 +38,14 @@ section a {color: #999;}
 section a:hover {color: #aaa;}
 
 .text-uppercase {text-transform: uppercase;}
-.margin-right-none {margin-right: 0;} 
-
-.display-table {display: table;}
-.display-table-row {display: table-row;}
-.display-table-cell {display: table-cell; background: yellow!important;}
+.margin-right-none {margin-right: 0;}
+.padding-left-right-none{padding-left: 0; padding-right: 0;} 
 
 /* Header*/
 img.open-logo {padding: 20px 0;}
 .input-search {text-align:left!important; background: #cc0066 url("../img/icons/search-icon.png")!important; background-repeat:no-repeat!important; background-position: 95% center!important;}
 
+.adsense {margin: 35px 0;}
 
 /* NAV */
 #menu-principal .dropdown-menu {border: none; border-radius: 0; /*color: #fff;*/}
@@ -87,48 +85,54 @@ li.bg-orange2 ul.dropdown-menu {background: #FF6600!important;}
 iframe {width: 100%;}
 
 /* EVENTOS */
-.events {margin-top:15px; margin-bottom:15px;}
-.events a {display: block;}
 
-.event-main img{position: relative; display: inline-block; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
-.event-secondary {min-height: 85px; padding-left: 0; padding-right: 0;}
-.event-secondary-date {color: #fff; font-size: 2.4em; /*padding-top:  0.65em;*/ text-align: center; line-height: 110%}
-.event-secondary-date p.data-dia {padding-top:  0.65em; display: block;}
-.event-secondary-date p.data-mes {padding-top:  0em; display: block;}
+article.eventos{margin-top:15px; margin-bottom:15px;}
+article.eventos a{display: block;}
+article.eventos a img{display: block;position: relative; display: inline-block; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+article.eventos .detalhes{display: block; position: relative; background: #d90000;}
+.detalhes h1, .detalhes h2, .detalhes h3, .detalhes h4, .detalhes h5 {color: #F2F2F2;}
+.detalhes:hover h1, .detalhes:hover h2, .detalhes:hover h3, .detalhes:hover h4, .detalhes:hover h5 {color: #FFFFFF;}
+article.eventos .detalhes .detalhes-bloco{position: absolute; bottom: 0; background: #d90000; opacity: 0.9; padding: 5px 10px;}
+article.eventos .detalhes .detalhes-bloco .evento-descricao{}
 
-.nowaday .event-secondary-date {background: #339933; /*padding-top: 0.8em;*/}
-.nowaday .event-secondary-date p.dia-hoje {padding-top: 1.1em;}
-.event-secondary-date p {line-height: 70%; margin-bottom: 0; color: #F2F2F2;}
-.event-secondary-date p small {font-size: 0.6em;text-align: center; margin-bottom: 0; line-height: 100%}
-.event-secondary-description {padding: 0.3em 0.6em; background: #DDDDDD;}
-.event-secondary-description h3 {margin: 0; padding: 0; line-height: 100%; color: #D90000; padding-bottom: 0.3em;}
-.event-secondary-description p {color: #666;}
-.event-secondary-description:hover p {color: #222;}
-.nowaday .event-secondary-description h3 {color: #339933;}
-.event-secondary-description p {font-size: 0.9em; line-height: 110%; margin: 0; display: block; padding-bottom: 0.3em;}
-.event-secondary-description p small {font-size: 0.9em; display: block; margin-bottom: 0;}
+article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h2,
+article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h3,
+article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h4 {margin: 0; padding: 0;}
+article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h2{font-size: 1.4em; text-transform: uppercase; font-weight: bold; margin-bottom: 5px;}
+article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h3{font-size: 1.2em; margin-bottom: 5px;} 
+article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h4{font-size: 1.0em; margin-bottom: 5px;} 
 
-.details {position:absolute; width:100%; z-index:10; left: 0px; bottom: 0px; padding: 0 15px;}
-.details-page {position:absolute; width:100%; z-index:10; left: 0px; bottom: 0px; padding: 0 15px;}
-.details h2, .details-page h2, .details h3, .details-page h3, .details h4, .details-page h4, .details p, .details-page p {margin: 0; padding: 0;}
+article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h2,
+article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h3,
+article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h4 {margin: 0; padding: 0;}
+article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h2 {font-size: 1.2em; text-transform: uppercase; font-weight: bold; margin-bottom: 5px;}
+article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h3 {font-size: 1.0em; margin-bottom: 5px;}
+article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h4 {font-size: 0.8em; margin-bottom: 5px;}
 
-.event-description, .event-date {opacity: 0.95; display: block; float: left;}
-div.details-wrapper {background: #d90000; opacity: 0.9; display: block;}
-.nowaday div.details-wrapper {background: #339933!important; opacity: 0.9;}
-article.event-main-nowaday a div.details div.details-wrapper {background: #339933;}
-.event-main-nowaday .event-description,
-.event-main-nowaday .event-date {/*background: #339933;*/ display: block; float: left;}
-.event-description {float: left; padding: 5px 10px;  min-height: 95px; width: 80%; color: #eee;}
-article.events a:hover div.details div.event-description h2,
-article.events a:hover div.details div.event-description h3,
-article.events a:hover div.details div.event-description h4,
-article.events a:hover div.details div.event-description p{color: #fff!important;}
-.event-description h2 {font-size: 1.3em; text-transform: uppercase; font-weight: bold;}
-.event-description h3, .event-secondary-description h3 {font-size: 1.0em; margin-top: 5px;}
-.event-secondary-description h3 {text-transform: uppercase; font-weight: bold;}
-.event-description h4 {font-size: 1em; margin-top: 5px;}
-.event-date {width: 20%; }
-p time{display: block; font}
+article.eventos .detalhes .evento-descricao-comum {padding: 5px 10px;}
+article.eventos .detalhes .evento-descricao-comum h2,
+article.eventos .detalhes .evento-descricao-comum h3,
+article.eventos .detalhes .evento-descricao-comum h4{margin: 0; padding: 0; color: #F2F2F2}
+article.eventos .detalhes .evento-descricao-comum h2{font-size: 1.2em; margin-bottom: 5px; text-transform: uppercase; font-weight: bold;}
+article.eventos .detalhes .evento-descricao-comum h3{font-size: 1.0em; margin-bottom: 5px;}
+article.eventos .detalhes .evento-descricao-comum h4{font-size: 0.8em; margin-bottom: 5px;}
+
+article.eventos .detalhes .detalhes-bloco .evento-data{text-align: center; line-height: 110%}
+article.eventos .detalhes .detalhes-bloco .evento-data p,
+article.eventos .detalhes .evento-data p{color: #fff; font-size: 2.4em;}
+article.eventos .detalhes .detalhes-bloco .evento-data p small,
+article.eventos .detalhes .evento-data p small{font-size: 0.6em;text-align: center; margin-bottom: 0; line-height: 100%}
+article.eventos .detalhes .detalhes-bloco .evento-data-principal{}
+article.eventos .detalhes .detalhes-bloco .evento-data-principal p{}
+
+article.eventos .detalhes > .hoje{background: #339933;}
+article.eventos .detalhes > .hoje p{}
+
+div.display-table{display: table;}
+div.display-table .table-header{height: 25%;}
+div.display-table .table-content{height: 50%; vertical-align: middle; text-align: center;}
+div.display-table .table-footer{height: 25%;}
+
 
 /* Page Evento */
 /*.descricao-pageevento {min-height: 233px;}*/
