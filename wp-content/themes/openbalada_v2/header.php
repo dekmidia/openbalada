@@ -55,9 +55,16 @@
               <img class="img-responsive center-block open-logo visible-xs visible-sm" src="<?php bloginfo('template_directory'); ?>/img/openbalada-logo.png" alt="OpenBalada">
             </a>
           </div>
-          <div class="col-md-4 column">
-          </div>
-          <div class="col-md-4 column">
+          <div class="col-md-8 column">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- Validação OpenBalada -->
+              <ins class="adsbygoogle"
+                   style="display:inline-block;width:728px;height:90px"
+                   data-ad-client="ca-pub-8448516230767950"
+                   data-ad-slot="1317560629"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
           </div>
           <div class="col-md-12 column">
             <nav class="nav-main navbar navbar-default navbar-main" role="navigation">

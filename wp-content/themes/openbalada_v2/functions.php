@@ -714,3 +714,33 @@ add_filter('nav_menu_link_attributes', function($atts, $item, $args) {
  
 	return $atts;
 }, 10, 3);
+
+/* Checa se evento é Hoje ou Outro Dia */
+function verificaQuando ($var){  
+  date_default_timezone_set("America/New_York"); 
+  $dataAtual = date("Y-m-d");
+  $dataEvento = $var;
+  ($dataAtual == $dataEvento) ? $var = "hoje" : $var = "";
+  return $var;
+}
+
+/* Recebe a data do evento e formata nos padrões */
+function formataData($varData){
+$varDia = (string) substr($varData, -2);
+$varMes = (string) substr($varData, -5, 2); 
+  switch ($varMes) {
+  	case "01": $varMes = "jan";  break;
+  	case "02": $varMes = "fev";  break; 
+  	case "03": $varMes = "mar";  break;
+  	case "04": $varMes = "abr";  break;
+  	case "05": $varMes = "mai";  break;
+  	case "06": $varMes = "jun";  break;
+  	case "07": $varMes = "jul";  break;
+  	case "08": $varMes = "ago";  break;
+  	case "09": $varMes = "set";  break;
+  	case "10": $varMes = "out";  break;
+  	case "11": $varMes = "nov";  break;
+  	case "12": $varMes = "dez";  break;
+  }
+  return array($varDia, $varMes); 
+}

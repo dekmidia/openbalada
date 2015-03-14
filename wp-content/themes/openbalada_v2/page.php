@@ -13,7 +13,7 @@
   </div>
   <div class="col-md-4 column">
       <div class="col-md-12 box">
-        <h2 class="titulo-page"><?php the_title(); ?></h2>
+        <h2 class="titulo-page"><?php //the_title(); ?></h2>
       </div>
   </div>
     
