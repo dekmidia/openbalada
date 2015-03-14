@@ -130,24 +130,16 @@ wp_reset_query();?>
             <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-3">
-            <div class="display-table">
-            <div class="table-header">
-            </div>
-            <div class="table-content">
-              <div class="evento-data">
+            <div class="evento-data">
               <?php if ($eHoje == "hoje") : ?>
-                <p>HJ</p>
-              <?php else : ?> 
-                <?php $formatado = formataData($eventoData); // recebe as datas formatadas?>
-                <p><?php echo $formatado[0]; ?></p>
-                <p><small><?php echo $formatado[1]; ?></small></p>
-              <?php endif; ?>
-              </div>
-            </div>
-            <div class="table-footer">            
-            </div>
-          </div>
-          </div><!-- /evento-data -->
+              <p>HJ</p>
+            <?php else : ?> 
+            <?php $formatado = formataData($eventoData); // recebe as datas formatadas?>
+            <p><?php echo $formatado[0]; ?></p>
+            <p><small><?php echo $formatado[1]; ?></small></p>
+          <?php endif; ?>
+        </div>
+      </div><!-- /evento-data -->
         </div>
         <div class="clear"></div>
       </div><!-- /detalhes-bloco -->
