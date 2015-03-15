@@ -14,7 +14,7 @@ $dataSistema = date( 'Y-m-d' );
 ?>
   
 
-<?php /* ------------- EVENTO PRINCIPAL; ------------- */?>
+<?php /* ------------- EVENTO PRINCIPAL ------------- */?>
   
   <?php
   $args=array(
@@ -57,7 +57,7 @@ $dataSistema = date( 'Y-m-d' );
         <div class="row">
           <div class="evento-descricao evento-descricao-principal col-md-9 col-sm-9 col-xs-9">
             <h2><?php the_title();?></h2>
-            <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,30); echo '...'; ?></h3>
+            <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,25); echo '...'; ?></h3>
             <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
           </div>
           <div class="evento-data evento-data-principal col-md-3 col-sm-3 col-xs-3">
@@ -85,7 +85,7 @@ $dataSistema = date( 'Y-m-d' );
 // Reset Query
 wp_reset_query();?>
 
-<?php /* ------------- EVENTO SECUNDÁRIO; ------------- */?>
+<?php /* ------------- EVENTO SECUNDÁRIO ------------- */?>
 
 <?php
   $args=array(
@@ -126,11 +126,11 @@ wp_reset_query();?>
         <div class="row">
           <div class="evento-descricao evento-descricao-secundario col-md-9 col-sm-9 col-xs-9">
             <h2><?php the_title();?></h2>
-            <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,8); echo '...'; ?></h3>
+            <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
             <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-3">
-            <div class="evento-data">
+            <div class="evento-data evento-data-secundario">
               <?php if ($eHoje == "hoje") : ?>
               <p>HJ</p>
             <?php else : ?> 

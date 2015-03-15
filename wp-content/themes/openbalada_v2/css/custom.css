@@ -110,8 +110,6 @@ article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h4 {font-
 
 article.eventos .detalhes .evento-descricao-comum {padding: 5px 10px; background: #DDDDDD;}
 article.eventos .detalhes .evento-descricao-comum:hover {background: #CCCCCC;}
-/* article.eventos .detalhes .evento-descricao-comum h2 {color:#d90000!important;} */
-article.eventos .detalhes:hover .evento-descricao-comum h2 {color: }
 article.eventos .detalhes .evento-descricao-comum h3,
 article.eventos .detalhes .evento-descricao-comum h4{margin: 0; padding: 0; color:#777;/* color: #F2F2F2 */}
 article.eventos .detalhes .evento-descricao-comum h2{font-size: 1.2em; margin-bottom: 5px; text-transform: uppercase; font-weight: bold;}
@@ -124,10 +122,10 @@ article.eventos .detalhes .evento-data p{color: #fff; font-size: 2.4em; margin:0
 article.eventos .detalhes .detalhes-bloco .evento-data p small,
 article.eventos .detalhes .evento-data p small{font-size: 0.5em;text-align: center; margin-bottom: 0; line-height: 100%; display: block; text-transform: uppercase;}
 
-article.eventos .detalhes .detalhes-bloco .evento-data-principal .evento-data{display: block; margin:20% 0}
-article.eventos .detalhes .detalhes-bloco .evento-data-principal p{font-size: 3em;}
-article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario .evento-data{display: block; margin:20% 0}
-article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario .evento-data p{font-size: 3em;}
+.evento-data-principal{display: block; margin:3% 0; font-size: 1.2em;}
+.evento-data-principal p{font-size: 3em;}
+.evento-data-secundario{display: block; margin:30% 0;}
+.evento-descricao-secundario p{font-size: 3em;}
 
 .hoje{background: #339933!important;}
 .evento-descricao-comum h2 {margin: 0; padding: 0; color:#777; color:#d90000;}
@@ -145,7 +143,6 @@ div.display-table .table-footer{height: 25%; display: table-row;}
 .eventos-single-page .detalhes .detalhes-bloco {background: #d90000; padding: 10px 15px 15px 15px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align: center;}
 .eventos-single-page .detalhes .detalhes-bloco p {font-size: 2.2em; color: #fff; line-height: 100%; margin: 0;}
 .eventos-single-page .detalhes .detalhes-bloco p small {font-size: 0.6em!important; display: block; text-transform: uppercase; line-height: 100%;}
-
 
 /*.descricao-pageevento {min-height: 233px;}*/
 .descricao-pageevento h2 {font-size: 32px; margin-top: 0px;}
@@ -176,8 +173,8 @@ div.display-table .table-footer{height: 25%; display: table-row;}
 .box {background: #fff; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 
 
-footer {background: #ccc; margin-top: 20px; padding: 10px 0; position:absolute; bottom:0; width:100%; min-height:88px;}
+footer {background: #ccc; margin-top: 20px; padding: 10px 0; position:absolute; bottom:0; width:100%; min-height:70px;}
 footer div.container {text-align: center;}
-footer div.container p {margin: 0.5em 0; color: #999; font-size: 14px;}
+footer div.container p {margin: 0; color: #999; font-size: 14px;}
 footer div.container img.logo-footer {display: inline-block;}
 footer img.projeto-dekmidia {display: block; margin: auto; margin-top: 1.4em;}
