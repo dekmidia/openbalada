@@ -70,9 +70,10 @@
           <div class="col-md-8 column adsense-mobile visible-xs visible-sm">            
               <!-- Validação OpenBalada -->
               <ins class="adsbygoogle"
-             style="display:inline-block;width:100%; height: 90px;"
-             data-ad-client="ca-pub-8448516230767950"
-             data-ad-slot="2786327023"></ins>
+               style="display:block"
+               data-ad-client="ca-pub-8448516230767950"
+               data-ad-slot="2925927825"
+               data-ad-format="auto"></ins>
         <script>
               (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
