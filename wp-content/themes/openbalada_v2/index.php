@@ -208,44 +208,51 @@ wp_reset_query();?>
   $eventoData = get_post_meta($post->ID,'evento-data',true);
   $eHoje = verificaQuando ($eventoData);
   ?>
-
-  <article class="col-md-3 col-sm-12 col-xs-12 eventos">
-    <a href="<?php the_permalink();?>" title="Clique para Mais Informações" >
-      <div class="detalhes <?php echo $eHoje;?>">
-        <div class="col-md-3 col-sm-3 col-xs-3 altura"> 
-          <div class="display-table">
-            <div class="table-header">
-            </div>
-            <div class="table-content">
-              <div class="evento-data">
-              <?php if ($eHoje == "hoje") : ?>
-                <p>HJ</p>
-              <?php else : ?> 
-                <?php $formatado = formataData($eventoData); // recebe as datas formatadas?>
-                <p><?php echo $formatado[0]; ?></p>
-                <p><small><?php echo $formatado[1]; ?></small></p>
-              <?php endif; ?>
+  <article class="col-md-3 col-sm-12 col-xs-12 eventos">    
+    <?php if ($eventoTipo == "Publicidade") : ?>
+      <div class="detalhes">
+        <div class="col-md-12 col-sm-12 col-xs-12 altura">
+          <?php the_content();?>
+        </div>
+      </div>
+    <?php else : ?> 
+      <a href="<?php the_permalink();?>" title="Clique para Mais Informações" >
+        <div class="detalhes <?php echo $eHoje;?>">
+          <div class="col-md-3 col-sm-3 col-xs-3 altura">           
+            <div class="display-table">
+              <div class="table-header">
+              </div>
+              <div class="table-content">
+                <div class="evento-data">
+                <?php if ($eHoje == "hoje") : ?>
+                  <p>HJ</p>
+                <?php else : ?> 
+                  <?php $formatado = formataData($eventoData); // recebe as datas formatadas?>
+                  <p><?php echo $formatado[0]; ?></p>
+                  <p><small><?php echo $formatado[1]; ?></small></p>
+                <?php endif; ?>
+                </div>
+              </div>
+              <div class="table-footer">            
               </div>
             </div>
-            <div class="table-footer">            
-            </div>
           </div>
+          <div class="evento-descricao evento-descricao-comum padding-left-right-none col-md-9 col-sm-9 col-xs-9 altura">
+            <h2><?php the_title();?></h2>
+            <?php $variavel = get_post_meta($post->ID,'evento-local',true); ?>
+              <?php if (($variavel != "")||($variavel != null)) : ?>
+                <?php $str = strip_tags($variavel);?>
+                <h3><?php echo $str; ?></h3>
+              <?php else : ?>
+                <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
+              <?php endif; ?>
+            <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
+          </div>
+          <div class="clear"></div>
+        <!-- evento-data -->
         </div>
-        <div class="evento-descricao evento-descricao-comum padding-left-right-none col-md-9 col-sm-9 col-xs-9 altura">
-          <h2><?php the_title();?></h2>
-          <?php $variavel = get_post_meta($post->ID,'evento-local',true); ?>
-            <?php if (($variavel != "")||($variavel != null)) : ?>
-              <?php $str = strip_tags($variavel);?>
-              <h3><?php echo $str; ?></h3>
-            <?php else : ?>
-              <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
-            <?php endif; ?>
-          <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
-        </div>
-        <div class="clear"></div>
-      <!-- evento-data -->
-      </div>
-    </a>
+      </a>
+    <?php endif; ?>    
   </article>
   <?php endwhile; else:?>
     <?php $event_comum = 0; ?>
