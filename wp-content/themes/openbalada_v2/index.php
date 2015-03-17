@@ -94,23 +94,33 @@ wp_reset_query();?>
 <?php /* ------------- EVENTO SECUNDÁRIO ------------- */?>
 
 <?php
-  $args=array(
-    'showposts' => -1,
-    'category_name' => 'agenda',
-    'meta_value' => 'Secundario',
-    'meta_key' => 'evento_tipo',
-    'orderby' => 'evento-data',
-    'order' => 'ASC',    
-    'meta_query' => array(
+   $args=array(
+  'showposts' => -1,
+  'category_name' => 'agenda',
+  'meta_query' => array(
+    'relation' => 'AND',
+    array(
+      'key' => 'evento-data',
+      'value' => $dataSistema,
+      'compare' => '>=',
+      'type' => 'DATE'
+      ),
+    array(
+      'relation' => 'OR',
       array(
-        'key' => 'evento-data',
-        'value' => $dataSistema,
-        'compare' => '>=',
-        'type' => 'DATE'
+        'key' => 'evento_tipo',
+          'compare' => 'NOT EXISTS', // works!
+          'value' => '' // This is ignored, but is necessary...
+          ),
+      array(
+        'key' => 'evento_tipo',
+        'value' => 'Secundario'
         )
-      ),    
-    
-    );
+      )
+    ),
+  'orderby' => 'evento-data',
+  'order' => 'ASC'
+  );
 
   query_posts($args);
   if (have_posts()): while (have_posts()) : the_post();  
@@ -193,7 +203,7 @@ wp_reset_query();?>
           ),
       array(
         'key' => 'evento_tipo',
-        'value' => 'Comum'
+        'value' => 'Secundario'
         )
       )
     ),
