@@ -97,8 +97,10 @@ wp_reset_query();?>
   $args=array(
     'showposts' => -1,
     'category_name' => 'agenda',
-    'meta_key' => 'evento_tipo',
     'meta_value' => 'Secundario',
+    'meta_key' => 'evento_tipo',
+    'orderby' => 'evento-data',
+    'order' => 'ASC',    
     'meta_query' => array(
       array(
         'key' => 'evento-data',
@@ -106,9 +108,8 @@ wp_reset_query();?>
         'compare' => '>=',
         'type' => 'DATE'
         )
-      ),
-    'orderby' => 'evento-data',
-    'order' => 'ASC'
+      ),    
+    
     );
 
   query_posts($args);
