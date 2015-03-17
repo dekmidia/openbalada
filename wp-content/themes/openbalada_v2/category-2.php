@@ -258,31 +258,17 @@ wp_reset_query();?>
 /* ------------- EVENTO EM BRANCO ------------- */
 
   if (($event_principal === 0) && ($event_secundario === 0) && ($event_comum === 0)): ?>
-    <article class="col-md-3 col-sm-12 col-xs-12 eventos">
-    <a href="<?php the_permalink();?>" title="Clique para Mais Informações" >
-      <div class="detalhes <?php echo $eHoje;?>">
-        <div class="col-md-3 col-sm-3 col-xs-3 altura"> 
-          <div class="display-table">
-            <div class="table-header">
-            </div>
-            <div class="table-content">
-              <div class="evento-data">
-                <p>!</p>              
-              </div>
-            </div>
-            <div class="table-footer">            
-            </div>
-          </div>
+    <article class="col-md-3 col-sm-12 col-xs-12 hoje">
+      <div class="detalhes">
+        <div class="col-md-3 col-sm-3 col-xs-3 bg-red">
+          <p>!</p>
         </div>
-        <div class="evento-descricao evento-descricao-comum padding-left-right-none col-md-9 col-sm-9 col-xs-9 altura">
+        <div class="col-md-9 col-sm-9 col-xs-9 altura">
           <h3 class="color-red">Sem eventos!</h3>
-          <h4>Não foram encontrados eventos cadastrados!</h4>
+          <p>Não foram encontrados eventos cadastrados!</p>
         </div>
-        <div class="clear"></div>
-      <!-- evento-data -->
       </div>
-    </a>
-  </article>
+    </article>
   <?php endif;
   wp_reset_query();?>    
 </section>

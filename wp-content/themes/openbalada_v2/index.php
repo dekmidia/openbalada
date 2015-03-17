@@ -46,7 +46,7 @@ $dataSistema = date( 'Y-m-d' );
  ?>
 
   <article class="col-md-6 eventos">
-    <a href="<?php the_permalink();?>" title="<?php the_title();?>">
+    <a href="<?php the_permalink();?>" title="Clique para Mais Informações">
     <?php 
       if(has_post_thumbnail()) : the_post_thumbnail( 'large', array( 'class' => 'img-responsive center-block' ) ); 
       else : ?> <img src="http://openbalada.com.br/wp-content/themes/openbalada_v2/img/no-image.jpg" class="img-responsive center-block" alt="Imagem Não Disponível"><?php
@@ -57,7 +57,13 @@ $dataSistema = date( 'Y-m-d' );
         <div class="row">
           <div class="evento-descricao evento-descricao-principal col-md-9 col-sm-9 col-xs-9">
             <h2><?php the_title();?></h2>
-            <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,25); echo '...'; ?></h3>
+            <?php $variavel = get_post_meta($post->ID,'evento-local',true); ?>
+            <?php if (($variavel != "")||($variavel != null)) : ?>
+              <?php $str = strip_tags($variavel);?>
+              <h3><?php echo $str; ?></h3>
+            <?php else : ?>
+              <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,25); echo '...'; ?></h3>
+            <?php endif; ?>            
             <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
           </div>
           <div class="evento-data evento-data-principal col-md-3 col-sm-3 col-xs-3">
@@ -115,7 +121,7 @@ wp_reset_query();?>
   ?>
 
   <article class="col-md-3 eventos">
-    <a href="<?php the_permalink();?>" title="<?php the_title();?>">
+    <a href="<?php the_permalink();?>" title="Clique para Mais Informações">
     <?php 
       if(has_post_thumbnail()):the_post_thumbnail( 'medium', array( 'class' => 'img-responsive center-block'));
       else : ?><img src="http://openbalada.com.br/wp-content/themes/openbalada_v2/img/no-image.jpg" class="img-responsive center-block" alt="Imagem Não Disponível"><?php 
@@ -126,7 +132,13 @@ wp_reset_query();?>
         <div class="row">
           <div class="evento-descricao evento-descricao-secundario col-md-9 col-sm-9 col-xs-9">
             <h2><?php the_title();?></h2>
-            <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
+            <?php $variavel = get_post_meta($post->ID,'evento-local',true); ?>
+            <?php if (($variavel != "")||($variavel != null)) : ?>
+              <?php $str = strip_tags($variavel);?>
+              <h3><?php echo $str; ?></h3>
+            <?php else : ?>
+              <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
+            <?php endif; ?>    
             <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-3">
@@ -198,7 +210,7 @@ wp_reset_query();?>
   ?>
 
   <article class="col-md-3 col-sm-12 col-xs-12 eventos">
-    <a href="<?php the_permalink();?>" title="<?php the_title();?>" >
+    <a href="<?php the_permalink();?>" title="Clique para Mais Informações" >
       <div class="detalhes <?php echo $eHoje;?>">
         <div class="col-md-3 col-sm-3 col-xs-3 altura"> 
           <div class="display-table">
@@ -221,7 +233,13 @@ wp_reset_query();?>
         </div>
         <div class="evento-descricao evento-descricao-comum padding-left-right-none col-md-9 col-sm-9 col-xs-9 altura">
           <h2><?php the_title();?></h2>
-          <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
+          <?php $variavel = get_post_meta($post->ID,'evento-local',true); ?>
+            <?php if (($variavel != "")||($variavel != null)) : ?>
+              <?php $str = strip_tags($variavel);?>
+              <h3><?php echo $str; ?></h3>
+            <?php else : ?>
+              <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
+            <?php endif; ?>
           <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
         </div>
         <div class="clear"></div>
@@ -237,17 +255,31 @@ wp_reset_query();?>
 /* ------------- EVENTO EM BRANCO ------------- */
 
   if (($event_principal === 0) && ($event_secundario === 0) && ($event_comum === 0)): ?>
-    <article class="col-md-3 col-sm-12 col-xs-12 hoje">
-      <div class="detalhes">
-        <div class="col-md-3 col-sm-3 col-xs-3 bg-red">
-          <p>!</p>
+    <article class="col-md-3 col-sm-12 col-xs-12 eventos">
+    <a href="<?php the_permalink();?>" title="Clique para Mais Informações" >
+      <div class="detalhes <?php echo $eHoje;?>">
+        <div class="col-md-3 col-sm-3 col-xs-3 altura"> 
+          <div class="display-table">
+            <div class="table-header">
+            </div>
+            <div class="table-content">
+              <div class="evento-data">
+                <p>!</p>              
+              </div>
+            </div>
+            <div class="table-footer">            
+            </div>
+          </div>
         </div>
-        <div class="col-md-9 col-sm-9 col-xs-9 altura">
+        <div class="evento-descricao evento-descricao-comum padding-left-right-none col-md-9 col-sm-9 col-xs-9 altura">
           <h3 class="color-red">Sem eventos!</h3>
-          <p>Não foram encontrados eventos cadastrados!</p>
+          <h4>Não foram encontrados eventos cadastrados!</h4>
         </div>
+        <div class="clear"></div>
+      <!-- evento-data -->
       </div>
-    </article>
+    </a>
+  </article>
   <?php endif;
   wp_reset_query();?>    
 </section>

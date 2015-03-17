@@ -40,12 +40,14 @@ section a:hover {color: #aaa;}
 .text-uppercase {text-transform: uppercase;}
 .margin-right-none {margin-right: 0;}
 .padding-left-right-none{padding-left: 0; padding-right: 0;} 
+.lr-simple-ss-frame {margin: 20px 0;}
 
 /* Header*/
 img.open-logo {padding: 20px 0;}
 .input-search {text-align:left!important; background: #cc0066 url("../img/icons/search-icon.png")!important; background-repeat:no-repeat!important; background-position: 95% center!important;}
 
 .adsense {margin: 35px 0;}
+.adsense-mobile {margin: 10px 0;}
 
 /* NAV */
 #menu-principal .dropdown-menu {border: none; border-radius: 0; /*color: #fff;*/}
@@ -88,11 +90,11 @@ iframe {width: 100%;}
 
 article.eventos{margin-top:15px; margin-bottom:15px;}
 article.eventos a{display: block;}
-article.eventos a img{display: block;position: relative; display: inline-block;}
-article.eventos .detalhes{display: block; position: relative; background: #d90000;}
+article.eventos a img{display: block;position: relative; display: inline-block; width: 100%}
+article.eventos .detalhes{display: block; position: relative; background: #d90000; width: 99.9%;}
 .detalhes h1, .detalhes h2, .detalhes h3, .detalhes h4, .detalhes h5 {color: #F2F2F2;}
 .detalhes:hover .detalhes-bloco h1, .detalhes:hover .detalhes-bloco h2, .detalhes:hover .detalhes-bloco h3, .detalhes:hover .detalhes-bloco h4, .detalhes:hover .detalhes-bloco h5 {color: #FFFFFF;}
-article.eventos .detalhes .detalhes-bloco{position: absolute; bottom: 0; background: #d90000; opacity: 0.9; padding: 5px 10px;}
+article.eventos .detalhes .detalhes-bloco{position: absolute; bottom: 0; background: #d90000; opacity: 0.9; padding: 5px 10px; width: 100%;}
 
 article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h2,
 article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h3,
@@ -112,8 +114,8 @@ article.eventos .detalhes .evento-descricao-comum {padding: 5px 10px; background
 article.eventos .detalhes .evento-descricao-comum:hover {background: #CCCCCC;}
 article.eventos .detalhes .evento-descricao-comum h3,
 article.eventos .detalhes .evento-descricao-comum h4{margin: 0; padding: 0; color:#777;/* color: #F2F2F2 */}
-article.eventos .detalhes .evento-descricao-comum h2{font-size: 1.2em; margin-bottom: 5px; text-transform: uppercase; font-weight: bold;}
-article.eventos .detalhes .evento-descricao-comum h3{font-size: 1.0em; margin-bottom: 5px;}
+article.eventos .detalhes .evento-descricao-comum h2{font-size: 1.0em; margin-bottom: 5px; text-transform: uppercase; font-weight: bold;}
+article.eventos .detalhes .evento-descricao-comum h3{font-size: 0.9em; margin-bottom: 5px;}
 article.eventos .detalhes .evento-descricao-comum h4{font-size: 0.8em; margin-bottom: 5px; font-weight: bold;}
 
 article.eventos .detalhes .detalhes-bloco .evento-data{text-align: center; line-height: 110%}

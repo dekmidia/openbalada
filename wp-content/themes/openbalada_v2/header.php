@@ -66,6 +66,17 @@
               (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
           </div>
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <div class="col-md-8 column adsense-mobile visible-xs visible-sm">            
+              <!-- Validação OpenBalada -->
+              <ins class="adsbygoogle"
+             style="display:inline-block;width:100%; height: 90px;"
+             data-ad-client="ca-pub-8448516230767950"
+             data-ad-slot="2786327023"></ins>
+        <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+          </div>
           <div class="col-md-12 column">
             <nav class="nav-main navbar navbar-default navbar-main" role="navigation">
               <div class="navbar-header">

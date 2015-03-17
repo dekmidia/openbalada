@@ -117,6 +117,15 @@ $dataSistema = date( 'Y-m-d' );
         </div>
       </div>
       <div class="col-md-6 column descricao-pageevento descricao-maps">
+        <?php /* ------ LOCAL ------ */?>
+        <?php $variavel = get_post_meta($post->ID,'evento-local',true); ?>
+          <?php if (($variavel != "")||($variavel != null)) : ?>
+            <?php $str = strip_tags($variavel);?>
+            <p><small>Local do Evento:</small></p>
+            <p class="box-cinza"><strong><?php echo $str; ?></strong></p>
+          <?php endif; ?>
+          <?php $variavel = null; ?>
+
         <?php /* ------ ENDEREÇO ------ */?>
         <p><small>Endereço</small></p>
               <p class="box-cinza"><strong><?php echo get_post_meta($post->ID,'evento-endereco',true); ?></strong></p>
