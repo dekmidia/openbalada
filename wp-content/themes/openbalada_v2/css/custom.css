@@ -47,6 +47,7 @@ img.open-logo {padding: 20px 0;}
 .input-search {text-align:left!important; background: #cc0066 url("../img/icons/search-icon.png")!important; background-repeat:no-repeat!important; background-position: 95% center!important;}
 
 .adsense {margin: 35px 0;}
+.ad-single {border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding-top:5px;padding-bottom:5px;}
 .adsense-mobile {margin: 10px 0;}
 
 /* NAV */

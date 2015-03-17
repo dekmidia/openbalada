@@ -18,7 +18,8 @@ $dataSistema = date( 'Y-m-d' );
   $eHoje = verificaQuando ($eventoData);
  ?>  
 
-  <div class="col-md-4 col-sm-12 col-xs-12 column eventos-single-page">
+  <div class="col-md-4 col-sm-12 col-xs-12 column ">
+    <div class="eventos-single-page">
     <?php 
       if(has_post_thumbnail()) : the_post_thumbnail( 'large', array( 'class' => 'img-responsive center-block' ) ); 
       else : ?> <img src="http://openbalada.com.br/wp-content/themes/openbalada_v2/img/no-image.jpg" class="img-responsive center-block" alt="Imagem Não Disponível"><?php
@@ -39,6 +40,28 @@ $dataSistema = date( 'Y-m-d' );
       </div>
       <div class="clearfix"></div>
     </div><!-- /detalhes -->
+   </div><!-- /eventos-single-page -->
+    <div class="adsense hidden-xs hidden-sm">
+     <!-- Validação OpenBalada -->
+     <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8448516230767950"
+     data-ad-slot="2925927825"
+     data-ad-format="auto"></ins>
+     <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+    </div>
+    <div class="adsense visible-xs visible-sm ad-single">
+      <!-- SinglePage-OpenBalada -->
+      <ins class="adsbygoogle"
+      style="display:inline-block;width:320px;height:100px;margin:auto;"
+      data-ad-client="ca-pub-8448516230767950"
+      data-ad-slot="7046573029"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
   </div>
   <br>
   <br>
@@ -186,7 +209,7 @@ $dataSistema = date( 'Y-m-d' );
       <div class="col-md-6 column">
         <div class="maps-pageevento">
           <iframe frameborder="0" style="border:0" src="https://maps.google.it/maps?q=<?php echo get_post_meta($post->ID,'evento-endereco',true); ?>&output=embed"></iframe>
-          <p><small><strong class="color-red">Fique atento:</strong> O mapa exibe dinamicamente o endereço, por isto as vezes ele pode demonstrar o caminho incorretamente.</small></p>
+          <p><small><strong class="color-red">Fique atento:</strong> O mapa exibe dinamicamente o endereço, por isto as vezes ele pode apontar o caminho incorretamente.</small></p>
         </div>
       </div>
     </div>

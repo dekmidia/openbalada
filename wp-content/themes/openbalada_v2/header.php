@@ -28,8 +28,9 @@
 
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?php bloginfo('template_directory'); ?>/css/bootstrap-xl.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-  <link href="<?php bloginfo('template_directory'); ?>/css/custom.css" rel="stylesheet">
+  <link href="<?php bloginfo('template_directory'); ?>/css/custom.css" rel="stylesheet">  
   <link href="<?php bloginfo('template_directory'); ?>/css/fonts.css" rel="stylesheet">
 
   <!-- Fav and touch icons -->
