@@ -3,7 +3,7 @@
     	<div class="container">
     		<div class="row">
     			<p><img class="logo-footer" src="<?php bloginfo('template_directory'); ?>/img/openbalada-logo-footer.png" alt="OpenBalada">  |  Todos os direitos reservados</p>
-                <p><small>Versão 0.2.61</small></p>
+                <p><small>Versão 0.2.65</small></p>
     		</div>  
     	</div>       
     </footer>
