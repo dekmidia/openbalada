@@ -283,12 +283,8 @@ wp_reset_query();?>
       </div>
     </a>
   </article>
-  <?php endif; ?>
-  <div class="navigation">
-    <?php if(function_exists('wp_paginate')) {wp_paginate('');} ?>
-  </div>      
-    <div class="clear"></div>
-  <?php wp_reset_query();?>    
+  <?php endif;
+  wp_reset_query();?>    
 </section>
 </div><!-- /container -->
 
