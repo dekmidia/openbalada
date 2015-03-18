@@ -203,7 +203,7 @@ wp_reset_query();?>
           ),
       array(
         'key' => 'evento_tipo',
-        'value' => 'Secundario'
+        'value' => 'Comum'
         )
       )
     ),
