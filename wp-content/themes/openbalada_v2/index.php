@@ -258,6 +258,9 @@ wp_reset_query();?>
                 <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
               <?php endif; ?>
             <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
+            <div class="more-info">
+              T
+            </div>
           </div>
           <div class="clear"></div>
         <!-- evento-data -->

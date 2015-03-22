@@ -36,6 +36,7 @@ a {color: #ddd;}
 a:hover {text-decoration: none; color: #fff;}
 section a {color: #999;}
 section a:hover {color: #aaa;}
+.padding-top-bottom-5 {padding-top: 5px; padding-bottom: 5px;}
 
 .text-uppercase {text-transform: uppercase;}
 .margin-right-none {margin-right: 0;}
@@ -91,11 +92,11 @@ iframe {width: 100%;}
 
 article.eventos{margin-top:15px; margin-bottom:15px;}
 article.eventos a{display: block;}
-article.eventos a img{display: block;position: relative; display: inline-block; width: 100%}
+article.eventos a img{display: block;position: relative; display: inline-block; width: 99.9%}
 article.eventos .detalhes{display: block; position: relative; background: #d90000; width: 99.9%;}
 .detalhes h1, .detalhes h2, .detalhes h3, .detalhes h4, .detalhes h5 {color: #F2F2F2;}
 .detalhes:hover .detalhes-bloco h1, .detalhes:hover .detalhes-bloco h2, .detalhes:hover .detalhes-bloco h3, .detalhes:hover .detalhes-bloco h4, .detalhes:hover .detalhes-bloco h5 {color: #FFFFFF;}
-article.eventos .detalhes .detalhes-bloco{position: absolute; bottom: 0; background: #d90000; opacity: 0.9; padding: 5px 10px; width: 100%;}
+article.eventos .detalhes .detalhes-bloco{position: absolute; bottom: 0; background: #d90000 url(../img/more-info-destaques.png) right bottom no-repeat; opacity: 0.9; padding: 5px 10px; width: 100%;}
 
 article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h2,
 article.eventos .detalhes .detalhes-bloco .evento-descricao-principal h3,
@@ -111,8 +112,8 @@ article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h2 {font-
 article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h3 {font-size: 1.0em; margin-bottom: 5px;}
 article.eventos .detalhes .detalhes-bloco .evento-descricao-secundario h4 {font-size: 0.8em; margin-bottom: 5px; font-weight: bold;}
 
-article.eventos .detalhes .evento-descricao-comum {padding: 5px 10px; background: #DDDDDD;}
-article.eventos .detalhes .evento-descricao-comum:hover {background: #CCCCCC;}
+article.eventos .detalhes .evento-descricao-comum {padding: 5px 10px; background: #DDDDDD url(../img/more-info.png) right bottom no-repeat; position: relative;}
+article.eventos .detalhes .evento-descricao-comum:hover {background: #CCCCCC url(../img/more-info-hover.png) right bottom no-repeat;}
 article.eventos .detalhes .evento-descricao-comum h3,
 article.eventos .detalhes .evento-descricao-comum h4{margin: 0; padding: 0; color:#777;/* color: #F2F2F2 */}
 article.eventos .detalhes .evento-descricao-comum h2{font-size: 1.0em; margin-bottom: 5px; text-transform: uppercase; font-weight: bold;}
@@ -127,7 +128,7 @@ article.eventos .detalhes .evento-data p small{font-size: 0.5em;text-align: cent
 
 .evento-data-principal{display: block; margin:3% 0; font-size: 1.2em;}
 .evento-data-principal p{font-size: 3em;}
-.evento-data-secundario{display: block; margin:30% 0;}
+.evento-data-secundario{display: block; margin:0 0 50%;}
 .evento-descricao-secundario p{font-size: 3em;}
 
 .hoje{background: #339933!important;}
@@ -138,6 +139,7 @@ div.display-table{display: table; height: 100%; width: 100%}
 div.display-table .table-header{height: 25%; display: table-row;}
 div.display-table .table-content{height: 50%; vertical-align: middle; text-align: center; display: table-row;}
 div.display-table .table-footer{height: 25%; display: table-row;}
+
 
 /* Page Evento */
 .eventos-single-page {position: relative; margin-bottom: 25px;}
@@ -176,7 +178,7 @@ div.display-table .table-footer{height: 25%; display: table-row;}
 .box {background: #fff; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 
 
-footer {background: #ccc; margin-top: 20px; padding: 10px 0; position:absolute; bottom:0; width:100%; min-height:70px;}
+footer {background: #ccc; margin-top: 20px; padding: 10px 0; position:absolute; bottom:0; width:100%; min-height:60px;}
 footer div.container {text-align: center;}
 footer div.container p {margin: 0; color: #999; font-size: 14px;}
 footer div.container img.logo-footer {display: inline-block;}

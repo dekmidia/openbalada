@@ -29,7 +29,9 @@ $dataSistema = date( 'Y-m-d' );
       <div class="detalhes-bloco <?php echo $eHoje;?>">
           <div class="evento-data evento-data-singlepage">
           <?php if ($eHoje == "hoje") : ?>
-            <p>HJ</p>
+            <p>Hoje</p>
+          <?php elseif ($dataSistema > $eventoData) : ?> 
+            <p>Evento já<br>realizado</p>
           <?php else : ?> 
             <?php $formatado = formataData($eventoData); // recebe as datas formatadas?>
             <p><?php echo $formatado[0]; ?></p>

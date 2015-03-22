@@ -2,8 +2,17 @@
     <footer class="clearfix"> 
     	<div class="container">
     		<div class="row">
-    			<p><img class="logo-footer" src="<?php bloginfo('template_directory'); ?>/img/openbalada-logo-footer.png" alt="OpenBalada">  |  Todos os direitos reservados</p>
-                <p><small>Versão 0.2.65</small></p>
+                <div class="col-md-4 text-center padding-top-bottom-5">
+        			<p><img class="logo-footer" src="<?php bloginfo('template_directory'); ?>/img/openbalada-logo-footer.png" alt="OpenBalada"></p>
+                </div>
+                <div class="col-md-4 text-center padding-top-bottom-5">
+                    <p><small>2015 - Todos os direitos reservados  |  Versão 0.2.68</small></p>
+                </div>
+                <div class="col-md-4 text-center padding-top-bottom-5">
+                    <a href="http://www.dekmidia.com.br" target="_blank" title="Precisando de soluções Digitais? Conheça a DekMídia" rel="nofollow">
+                        <p><img class="logo-footer" src="<?php bloginfo('template_directory'); ?>/img/projeto-dekmidia.png" alt="OpenBalada"></p>
+                    </a>
+                </div>
     		</div>  
     	</div>       
     </footer>
