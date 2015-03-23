@@ -128,10 +128,26 @@ wp_reset_query();?>
   //Recebe os valores de tipo de evento, data e se o evento é hoje */  
   $eventoTipo = get_post_meta($post->ID,'evento-tipo',true);
   $eventoData = get_post_meta($post->ID,'evento-data',true);
+  $publicidade = get_post_meta($post->ID,'post-publicidade',true);
   $eHoje = verificaQuando ($eventoData);
   ?>
 
   <article class="col-md-3 eventos">
+    <?php if ($publicidade == "Sim") : ?>
+      <div class="detalhes"> 
+        <div class="row">
+          <div class="evento-descricao evento-descricao-secundario col-md-12 col-sm-12 col-xs-12">
+            <?php if(has_post_thumbnail()):the_post_thumbnail( 'medium', array( 'class' => 'img-responsive center-block')); ?>
+             <?php else : ?>
+              <?php the_content();?>
+              <?php $adsense = null;
+              $adsense = get_post_meta($post->ID,'codigo-adsense',true); 
+              echo $adsense;?>
+            <?php endif;  ?>            
+          </div>
+        </div>
+      </div><!-- /detalhes -->
+    <?php else : ?> 
     <a href="<?php the_permalink();?>" title="Clique para Mais Informações">
     <?php 
       if(has_post_thumbnail()):the_post_thumbnail( 'medium', array( 'class' => 'img-responsive center-block'));
@@ -169,6 +185,7 @@ wp_reset_query();?>
       <div class="clear"></div>
     </div><!-- /detalhes -->
     </a>
+  <?php endif; ?>   
 </article> 
 <?php endwhile; else:?>
   <?php $event_secundario = 0; ?>
@@ -217,14 +234,18 @@ wp_reset_query();?>
   //Recebe os valores de tipo de evento, data e se o evento é hoje */  
   $eventoTipo = get_post_meta($post->ID,'evento-tipo',true);
   $eventoData = get_post_meta($post->ID,'evento-data',true);
+  $publicidade = get_post_meta($post->ID,'post-publicidade',true);
   $eHoje = verificaQuando ($eventoData);
   ?>
   <article class="col-md-3 col-sm-12 col-xs-12 eventos">    
-    <?php if ($eventoTipo == "Publicidade") : ?>
+    <?php if ($publicidade == "Sim") : ?>
       <div class="detalhes">
-        <div class="col-md-12 col-sm-12 col-xs-12 altura">
+         <div class="evento-descricao evento-descricao-comum padding-left-right-none col-md-12 col-sm-12 col-xs-12 altura">
           <?php the_content();?>
-        </div>
+          <?php $adsense = null;
+          $adsense = get_post_meta($post->ID,'codigo-adsense',true); 
+          echo $adsense;?>
+         </div>
       </div>
     <?php else : ?> 
       <a href="<?php the_permalink();?>" title="Clique para Mais Informações" >
@@ -258,9 +279,6 @@ wp_reset_query();?>
                 <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
               <?php endif; ?>
             <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
-            <div class="more-info">
-              T
-            </div>
           </div>
           <div class="clear"></div>
         <!-- evento-data -->
