@@ -50,35 +50,59 @@
     <body>
     	<div class="container conteudo">
     		<header class="row clearfix">
-          <div class="col-md-4 column">
+          <div class="col-md-3 column">
             <a href="<?php echo get_settings('home'); ?>" title="Página Inicial"> 
               <img class="slider img-responsive open-logo hidden-xs hidden-sm" src="<?php bloginfo('template_directory'); ?>/img/openbalada-logo.png" alt="OpenBalada">
               <img class="img-responsive center-block open-logo visible-xs visible-sm" src="<?php bloginfo('template_directory'); ?>/img/openbalada-logo.png" alt="OpenBalada">
             </a>
           </div>
-          <div class="col-md-8 column adsense hidden-xs hidden-sm">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-              <!-- Validação OpenBalada -->
-              <ins class="adsbygoogle"
-                   style="display:inline-block;width:728px;height:90px"
+          
+          <?php  // Area de Ads - Google e Boo-Box
+
+            $ad1 = '
+              <div class="col-md-9 column adsense hidden-xs hidden-sm">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Validação OpenBalada -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:728px;height:90px"
+                     data-ad-client="ca-pub-8448516230767950"
+                     data-ad-slot="1317560629"></ins>
+                <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+              </div>
+              
+              <div class="col-md-9 column adsense-mobile visible-xs visible-sm">            
+                  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                  <!-- Validação OpenBalada -->
+                  <ins class="adsbygoogle"
+                   style="display:block"
                    data-ad-client="ca-pub-8448516230767950"
-                   data-ad-slot="1317560629"></ins>
-              <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
+                   data-ad-slot="2925927825"
+                   data-ad-format="auto"></ins>
+                  <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+              </div>
+             ';
+            $ad2 = '
+            <div class="col-md-9 column adsense-mobile hidden-xs hidden-sm">            
+              <script type="text/javascript">
+                bb_bid = "1700590";
+                bb_lang = "pt-BR";
+                bb_name = "custom";
+                bb_limit = "8";
+                bb_format = "bbb";
               </script>
-          </div>
-          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <div class="col-md-8 column adsense-mobile visible-xs visible-sm">            
-              <!-- Validação OpenBalada -->
-              <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-8448516230767950"
-               data-ad-slot="2925927825"
-               data-ad-format="auto"></ins>
-        <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
-          </div>
+              <script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+            </div>
+             ' ;
+
+            $banners = array($ad1, $ad2);
+            shuffle($banners);
+            print $banners[0]
+            ?>
+
           <div class="col-md-12 column">
             <nav class="nav-main navbar navbar-default navbar-main" role="navigation">
               <div class="navbar-header">

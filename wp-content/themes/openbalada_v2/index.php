@@ -18,7 +18,7 @@ $dataSistema = date( 'Y-m-d' );
   
   <?php
   $args=array(
-    'showposts' => -1,
+    'showposts' => 1,
     'category_name' => 'agenda',
     'meta_key' => 'evento_tipo',
     'meta_value' => 'Principal',
@@ -95,7 +95,7 @@ wp_reset_query();?>
 
 <?php
    $args=array(
-  'showposts' => -1,
+  'showposts' => 4,
   'category_name' => 'agenda',
   'meta_query' => array(
     'relation' => 'AND',
