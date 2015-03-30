@@ -2,7 +2,7 @@
 
 <section class="row"> 
   <div class="col-md-12 col-sm-12 col-xs-12">
-    <h1 class="titulo">Agenda</h1>
+    <h1 class="titulo">Shows e Eventos</h1>
   </div>
 
 <?php 
@@ -19,7 +19,7 @@ $dataSistema = date( 'Y-m-d' );
   <?php
   $args=array(
     'showposts' => 1,
-    'category_name' => 'agenda',
+    'post_parent' => 'Cidade',
     'meta_key' => 'evento_tipo',
     'meta_value' => 'Principal',
     'meta_query' => array(
@@ -64,7 +64,12 @@ $dataSistema = date( 'Y-m-d' );
             <?php else : ?>
               <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,25); echo '...'; ?></h3>
             <?php endif; ?>            
-            <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
+            <!-- <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4> -->
+            <h4><?php foreach((get_the_category()) as $cat) {
+                if (!($cat->category_parent == 23))
+                $city = $cat->cat_name . ' '; };
+                $cidade = str_replace("Agenda ", "", $city);
+                echo  "<h4>" . $cidade . "</h4>"; ?>
           </div>
           <div class="evento-data evento-data-principal col-md-3 col-sm-3 col-xs-3">
           <?php if ($eHoje == "hoje") : ?>
@@ -96,7 +101,7 @@ wp_reset_query();?>
 <?php
    $args=array(
   'showposts' => 4,
-  'category_name' => 'agenda',
+  'post_parent' => 'Cidade',
   'meta_query' => array(
     'relation' => 'AND',
     array(
@@ -134,7 +139,7 @@ wp_reset_query();?>
 
   <article class="col-md-3 eventos">
     <?php if ($publicidade == "Sim") : ?>
-      <div class="detalhes"> 
+      <div class="detalhes detalhes-ads"> 
         <div class="row">
           <div class="evento-descricao evento-descricao-secundario col-md-12 col-sm-12 col-xs-12">
             <?php if(has_post_thumbnail()):the_post_thumbnail( 'medium', array( 'class' => 'img-responsive center-block')); ?>
@@ -166,7 +171,12 @@ wp_reset_query();?>
             <?php else : ?>
               <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
             <?php endif; ?>    
-            <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
+            <!-- <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4> -->
+            <?php foreach((get_the_category()) as $cat) {
+                if (!($cat->category_parent == 23))
+                $city = $cat->cat_name . ' '; };
+                $cidade = str_replace("Agenda ", "", $city);
+                echo "<h4>" . $cidade . "</h4>"; ?>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-3">
             <div class="evento-data evento-data-secundario">
@@ -202,7 +212,7 @@ wp_reset_query();?>
  /* LOOP PARA EVENTO COMUM */
  $args=array(
   'showposts' => -1,
-  'category_name' => 'agenda',
+  'post_parent' => 'Cidade',
   'meta_query' => array(
     'relation' => 'AND',
     array(
@@ -271,14 +281,20 @@ wp_reset_query();?>
           </div>
           <div class="evento-descricao evento-descricao-comum padding-left-right-none col-md-9 col-sm-9 col-xs-9 altura">
             <h2><?php the_title();?></h2>
-            <?php $variavel = get_post_meta($post->ID,'evento-local',true); ?>
+            <!-- <?php $variavel = get_post_meta($post->ID,'evento-local',true); ?>
               <?php if (($variavel != "")||($variavel != null)) : ?>
                 <?php $str = strip_tags($variavel);?>
                 <h3><?php echo $str; ?></h3>
               <?php else : ?>
                 <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
-              <?php endif; ?>
-            <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
+              <?php endif; ?> -->
+              <!-- <h4><?php $category = get_the_category(); echo $category[0]->cat_name; ?></h4> -->
+              <h4><?php foreach((get_the_category()) as $cat) {
+                if (!($cat->category_parent == 23))
+                $city = $cat->cat_name . ' '; };
+                $cidade = str_replace("Agenda ", "", $city);
+                echo $cidade; ?></h4>
+             
           </div>
           <div class="clear"></div>
         <!-- evento-data -->
@@ -323,16 +339,5 @@ wp_reset_query();?>
   wp_reset_query();?>    
 </section>
 </div><!-- /container -->
-
-<script>
-// Manter a altura dos eventos comuns todos iguais
-$( document ).ready(function() {
-  var heights = $(".altura").map(function() {
-    return $(this).height();
-  }).get(),
-  maxHeight = Math.max.apply(null, heights);
-  $(".altura").height(maxHeight);
-});
-</script>
 
 <?php get_footer();?>

@@ -27,10 +27,25 @@
   <meta name="robots" content="index,follow" />
 
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+  <link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?php bloginfo('template_directory'); ?>/css/bootstrap-xl.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+  <link href="<?php bloginfo('template_directory'); ?>/css/custom.css" rel="stylesheet">  
+  <link href="<?php bloginfo('template_directory'); ?>/css/fonts.css" rel="stylesheet">
 
   <!-- Fav and touch icons -->
-  <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">  
-  
+  <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
+
+  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <?php wp_head(); ?>
     </head>
     <body>
     	<div class="container conteudo">
@@ -71,7 +86,7 @@
               </div>
              ';
             $ad2 = '
-            <div class="col-md-9 column adsense hidden-xs hidden-sm">            
+            <div class="col-md-9 column adsense-mobile hidden-xs hidden-sm">            
               <script type="text/javascript">
                 bb_bid = "1700590";
                 bb_lang = "pt-BR";
@@ -81,19 +96,6 @@
               </script>
               <script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
             </div>
-
-            <div class="col-md-9 column adsense-mobile visible-xs visible-sm">            
-                  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                  <!-- Validação OpenBalada -->
-                  <ins class="adsbygoogle"
-                   style="display:block"
-                   data-ad-client="ca-pub-8448516230767950"
-                   data-ad-slot="2925927825"
-                   data-ad-format="auto"></ins>
-                  <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                  </script>
-              </div>
              ' ;
 
             $banners = array($ad1, $ad2);

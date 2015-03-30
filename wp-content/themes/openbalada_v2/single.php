@@ -73,7 +73,7 @@ $dataSistema = date( 'Y-m-d' );
         <h2 class="color-red text-uppercase"><strong><?php the_title();?></strong></h2>
         <?php the_content(); ?>
         <br>
-        <p><?php the_tags('<strong class="tags">TAGS: </strong>',' • ','<br /><br />'); ?></p>
+        <p><?php the_tags('<strong class="tags">TAGS: </strong>',' ','<br /><br />'); ?></p>
       </div>
     </div>
     <div class="row">
@@ -156,10 +156,12 @@ $dataSistema = date( 'Y-m-d' );
               <p class="box-cinza"><strong><?php echo get_post_meta($post->ID,'evento-endereco',true); ?></strong></p>
         
         <?php /* ------ CIDADE ------ */?>
-        <p><small>Cidade:</small></p>
-              <p class="box-cinza"><strong>
-                <?php $category = get_the_category(); echo $category[1]->cat_name;true; ?>
-               </strong></p>
+        <p><small>Cidade:</small></p>              
+          <?php foreach((get_the_category()) as $cat) {
+            if (!($cat->category_parent == 23))
+               $city = $cat->cat_name . ' '; };
+               $cidade = str_replace("Agenda ", "", $city);
+               echo '<p class="box-cinza"><strong>' . $cidade . '</strong></p>'; ?>               
         
         <?php /* ------ TELEFONE ------ */?>
         <?php $variavel = get_post_meta($post->ID,'evento-telefone',true); ?>
@@ -210,7 +212,7 @@ $dataSistema = date( 'Y-m-d' );
       <?php /* ------ GOOGLE MAPS ------ */?>
       <div class="col-md-6 column">
         <div class="maps-pageevento">
-          <iframe frameborder="0" style="border:0" src="https://maps.google.it/maps?q=<?php echo get_post_meta($post->ID,'evento-endereco',true); ?>&output=embed"></iframe>
+          <iframe frameborder="0" style="border:0" src="https://maps.google.it/maps?q=<?php echo get_post_meta($post->ID,'evento-endereco',true) . "," . $cidade; ?>&output=embed"></iframe>
           <p><small><strong class="color-red">Fique atento:</strong> O mapa exibe dinamicamente o endereço, por isto as vezes ele pode apontar o caminho incorretamente.</small></p>
         </div>
       </div>

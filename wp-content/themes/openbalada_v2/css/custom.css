@@ -85,7 +85,7 @@ div.form-group-navbar-nav:focus {box-shadow: none;}
 li.bg-orange2 ul.dropdown-menu {background: #FF6600!important;}
 
 /* CONTAINER */
-.conteudo {}
+.conteudo {padding-bottom: 25px;}
 iframe {width: 100%;}
 
 /* EVENTOS */
@@ -136,7 +136,7 @@ article.eventos .detalhes .evento-data p small{font-size: 0.5em;text-align: cent
 .hoje .evento-descricao-comum h2 {color:#339933;}
 
 div.display-table{display: table; height: 100%; width: 100%}
-div.display-table .table-header{height: 25%; display: table-row;}
+div.display-table .table-header{height: 15%; display: table-row;}
 div.display-table .table-content{height: 50%; vertical-align: middle; text-align: center; display: table-row;}
 div.display-table .table-footer{height: 25%; display: table-row;}
 
@@ -174,11 +174,18 @@ div.display-table .table-footer{height: 25%; display: table-row;}
 .icon-maps{background-position: -35px -2px;}
 .icon-maps{background-position: -35px -2px;}
 
+/* ADS */
+.detalhes-ads {background:none!important; text-align:center; max-width: 265px!important;}
+
 /* PAGE */
 .box {background: #fff; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 
+/* TAGS */
+a[rel=tag] {display: inline-block; padding: 5px 10px; background: #fff; color: #d90000; border-radius: 5px; --webkit-border-radius: 5px; -moz-border-radius: 5px;}
+a[rel=tag]:hover {background: #d90000; color: #fff;}
 
-footer {background: #ccc; margin-top: 20px; padding: 10px 0; position:absolute; bottom:0; width:100%; min-height:60px;}
+
+footer {background: #ccc; margin-top: 20px; padding: 10px 0; position:absolute; bottom:0; width:100%; min-height:60px; max-height:130px;}
 footer div.container {text-align: center;}
 footer div.container p {margin: 0; color: #999; font-size: 14px;}
 footer div.container img.logo-footer {display: inline-block;}
