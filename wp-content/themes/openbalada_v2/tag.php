@@ -62,7 +62,11 @@ $eHoje = verificaQuando ($eventoData);?>
           <?php else : ?>
           <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
         <?php endif; ?>    
-        <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
+        <h4><?php foreach((get_the_category()) as $cat) {
+                if (!($cat->category_parent == 23))
+                $city = $cat->cat_name . ' '; };
+                $cidade = str_replace("Agenda ", "", $city);
+                echo  "<h4>" . $cidade . "</h4>"; ?>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-3">
         <div class="evento-data evento-data-secundario">
