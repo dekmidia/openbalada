@@ -41,6 +41,7 @@ section a:hover {color: #aaa;}
 .text-uppercase {text-transform: uppercase;}
 .margin-right-none {margin-right: 0;}
 .padding-left-right-none{padding-left: 0; padding-right: 0;} 
+.padding-none{padding:0!important;} 
 .lr-simple-ss-frame {margin: 20px 0;}
 
 /* Header*/
@@ -181,7 +182,7 @@ div.display-table .table-footer{height: 25%; display: table-row;}
 .box {background: #fff; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 
 /* TAGS */
-a[rel=tag] {display: inline-block; padding: 5px 10px; background: #fff; color: #d90000; border-radius: 5px; --webkit-border-radius: 5px; -moz-border-radius: 5px;}
+a[rel=tag] {display: inline-block; padding: 5px 10px; margin: 2px; background: #fff; color: #d90000; border-radius: 5px; --webkit-border-radius: 5px; -moz-border-radius: 5px;}
 a[rel=tag]:hover {background: #d90000; color: #fff;}
 
 

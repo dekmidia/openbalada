@@ -32,7 +32,7 @@
   <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">  
   
     </head>
-    <body>
+    <body class="waitMe_body">
     	<div class="container conteudo">
     		<header class="row clearfix">
           <div class="col-md-3 column">
@@ -44,7 +44,7 @@
           
           <?php  // Area de Ads - Google e Boo-Box
 
-            $ad1 = '
+            /*$ad1 = '
               <div class="col-md-9 column adsense hidden-xs hidden-sm">
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- Validação OpenBalada -->
@@ -69,7 +69,7 @@
                     (adsbygoogle = window.adsbygoogle || []).push({});
                   </script>
               </div>
-             ';
+             ';*/
             $ad2 = '
             <div class="col-md-9 column adsense hidden-xs hidden-sm">            
               <script type="text/javascript">
@@ -80,25 +80,12 @@
                 bb_format = "bbb";
               </script>
               <script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
-            </div>
+            </div>' ;
 
-            <div class="col-md-9 column adsense-mobile visible-xs visible-sm">            
-                  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                  <!-- Validação OpenBalada -->
-                  <ins class="adsbygoogle"
-                   style="display:block"
-                   data-ad-client="ca-pub-8448516230767950"
-                   data-ad-slot="2925927825"
-                   data-ad-format="auto"></ins>
-                  <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                  </script>
-              </div>
-             ' ;
-
-            $banners = array($ad1, $ad2);
+            /*$banners = array($ad1, $ad2);
             shuffle($banners);
-            print $banners[0]
+            print $banners[0]*/
+            echo $ad2;
             ?>
 
           <div class="col-md-12 column">

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><link rel="stylesheet" type="text/css" href="http://openbalada.com.br/wp-content/cache/minify/000000/M9DPL0jNS0rMSUxJjC8z0k8uLtZPys8vKS4pSizQy83M0zHAp0K3IgerguTS4pL8XKxSafl5JcUA.css" media="all" />
+
+	<meta charset="UTF-8">
+	<title>Funk -  OpenBalada | Onde sua diversão começa  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Não sabe o que fazer neste fim de semana?  Para onde ir? Quanto custa aquela balada, cinema, teatro ou festa? Acesse nosso site e diverta-se! ">
+  <meta name="author" content="DekMídia Soluções Digitais">
+  <meta name="keywords" content="balada, divulgação, mídia, vale do paraiba, eventos, festas, virada, bares" />
+
+  <meta property="og:title" content="OpenBalada - Onde sua diversão começa!" />
+  <meta property="og:url" content="http://www.openbalada.com.br/" />
+  <meta property="og:image" content="http://www.openbalada.com.br/wp-content/themes/openbalada_v2/img/openbalada-logo.png" />
+  <meta property="og:site_name" content="OpenBalada - Siga sua Balada!" />
+  <meta property="og:description" content="OpenBalada é uma ferramenta colaborativa de divulgação de informações de eventos." />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="pingback" href="http://openbalada.com.br/xmlrpc.php">
+
+  <!-- Fav and touch icons -->
+  <link rel="shortcut icon" href="http://openbalada.com.br/wp-content/themes/openbalada_v2/img/favicon.ico">  
+  
+    </head>
+    <body class="waitMe_body">
+    	<div class="container conteudo">
+    		<header class="row clearfix">
+          <div class="col-md-3 column">
+            <a href="http://openbalada.com.br" title="Página Inicial"> 
+              <img class="slider img-responsive open-logo hidden-xs hidden-sm" src="http://openbalada.com.br/wp-content/themes/openbalada_v2/img/openbalada-logo.png" alt="OpenBalada">
+              <img class="img-responsive center-block open-logo visible-xs visible-sm" src="http://openbalada.com.br/wp-content/themes/openbalada_v2/img/openbalada-logo.png" alt="OpenBalada">
+            </a>
+          </div>
+          
+          
+            <div class="col-md-9 column adsense hidden-xs hidden-sm">            
+              <script type="text/javascript">
+                bb_bid = "1700590";
+                bb_lang = "pt-BR";
+                bb_name = "custom";
+                bb_limit = "8";
+                bb_format = "bbb";
+              </script>
+              <script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+            </div>
+
+            <div class="col-md-9 column adsense-mobile visible-xs visible-sm">  
+              <script type="text/javascript">
+                bb_bid = "1700590";
+                bb_lang = "pt-BR";
+                bb_name = "custom";
+                bb_limit = "8";
+                bb_format = "bbb";
+              </script>
+              <script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+            </div>            
+             
+          <div class="col-md-12 column">
+            <nav class="nav-main navbar navbar-default navbar-main" role="navigation">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button> 
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="menu-header"><ul id="menu-principal" class="menu col-md-10 nav navbar-nav"><li id="menu-item-11" class="bg-red col-md-2 col-sm-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-11"><a href="http://openbalada.com.br/">agenda</a></li>
+<li id="menu-item-13" class="bg-orange2 col-md-2 col-sm-2 menu-item menu-item-type-taxonomy menu-item-object-category current-category-ancestor menu-item-has-children menu-item-13"><a href="http://openbalada.com.br/agenda" data-toggle="dropdown" class="dropdown-toggle">cidades <b class="caret"></b></a>
+<ul class="dropdown-menu list-unstyled">
+	<li id="menu-item-14" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14"><a href="http://openbalada.com.br/agenda/cidade/aparecida">Aparecida / SP</a></li>
+	<li id="menu-item-15" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15"><a href="http://openbalada.com.br/agenda/cidade/cacapava">Caçapava / SP</a></li>
+	<li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16"><a href="http://openbalada.com.br/agenda/cidade/cachoeira-paulista">Cachoeira Paulista / SP</a></li>
+	<li id="menu-item-17" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17"><a href="http://openbalada.com.br/agenda/cidade/campos-do-jordao">Campos do Jordão / SP</a></li>
+	<li id="menu-item-18" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18"><a href="http://openbalada.com.br/agenda/cidade/caragua">Caraguatatuba / SP</a></li>
+	<li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19"><a href="http://openbalada.com.br/agenda/cidade/cruzeiro">Cruzeiro / SP</a></li>
+	<li id="menu-item-20" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20"><a href="http://openbalada.com.br/agenda/guaratingueta">Guaratinguetá / SP</a></li>
+	<li id="menu-item-21" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21"><a href="http://openbalada.com.br/agenda/ilhabela">Ilhabela / SP</a></li>
+	<li id="menu-item-22" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22"><a href="http://openbalada.com.br/agenda/jacarei">Jacareí / SP</a></li>
+	<li id="menu-item-23" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a href="http://openbalada.com.br/agenda/lorena">Lorena / SP</a></li>
+	<li id="menu-item-24" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24"><a href="http://openbalada.com.br/agenda/monteiro-lobato">Monteiro Lobato / SP</a></li>
+	<li id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-25"><a href="http://openbalada.com.br/agenda/paraibuna">Paraibuna / SP</a></li>
+	<li id="menu-item-26" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26"><a href="http://openbalada.com.br/agenda/pinda">Pindamonhangaba / SP</a></li>
+	<li id="menu-item-27" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27"><a href="http://openbalada.com.br/agenda/sao-jose-dos-campos">São José dos Campos / SP</a></li>
+	<li id="menu-item-28" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28"><a href="http://openbalada.com.br/agenda/sao-luiz-do-paraitinga">São Luiz do Paraitinga / SP</a></li>
+	<li id="menu-item-29" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29"><a href="http://openbalada.com.br/agenda/sao-sebastiao">São Sebastião / SP</a></li>
+	<li id="menu-item-30" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-30"><a href="http://openbalada.com.br/agenda/taubate">Taubaté / SP</a></li>
+	<li id="menu-item-31" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31"><a href="http://openbalada.com.br/agenda/tremembe">Tremembé / SP</a></li>
+	<li id="menu-item-32" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32"><a href="http://openbalada.com.br/agenda/ubatuba">Ubatuba / SP</a></li>
+</ul>
+</li>
+<li id="menu-item-35" class="bg-green2 col-md-2 col-sm-2 menu-item menu-item-type-taxonomy menu-item-object-category current-category-ancestor current-menu-ancestor current-menu-parent current-category-parent menu-item-has-children menu-item-35"><a href="http://openbalada.com.br/agenda/estilo" data-toggle="dropdown" class="dropdown-toggle">estilo <b class="caret"></b></a>
+<ul class="dropdown-menu list-unstyled">
+	<li id="menu-item-36" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-36"><a href="http://openbalada.com.br/agenda/estilo/alternativo">Alternativo</a></li>
+	<li id="menu-item-37" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37"><a href="http://openbalada.com.br/agenda/estilo/axe">Axé</a></li>
+	<li id="menu-item-38" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-38"><a href="http://openbalada.com.br/agenda/estilo/classica">Clássica</a></li>
+	<li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="http://openbalada.com.br/agenda/estilo/eletronica">Eletrônica</a></li>
+	<li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="http://openbalada.com.br/agenda/estilo/forro">Forró</a></li>
+	<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-41"><a href="http://openbalada.com.br/agenda/estilo/funk">Funk</a></li>
+	<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="http://openbalada.com.br/agenda/estilo/gospel">Gospel</a></li>
+	<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-43"><a href="http://openbalada.com.br/agenda/estilo/hip-hop">Hip Hop</a></li>
+	<li id="menu-item-44" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-44"><a href="http://openbalada.com.br/agenda/estilo/pagode">Pagode</a></li>
+	<li id="menu-item-45" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-45"><a href="http://openbalada.com.br/agenda/estilo/pop">Pop</a></li>
+	<li id="menu-item-46" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-46"><a href="http://openbalada.com.br/agenda/estilo/reggae">Reggae</a></li>
+	<li id="menu-item-47" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-47"><a href="http://openbalada.com.br/agenda/estilo/retro">Retro</a></li>
+	<li id="menu-item-48" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48"><a href="http://openbalada.com.br/agenda/estilo/rock">Rock</a></li>
+	<li id="menu-item-49" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-49"><a href="http://openbalada.com.br/agenda/estilo/samba">Samba</a></li>
+	<li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="http://openbalada.com.br/agenda/estilo/sertanejo-country">Sertanejo / Country</a></li>
+	<li id="menu-item-51" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51"><a href="http://openbalada.com.br/agenda/estilo/sertanejo-universitario">Sertanejo Universitário</a></li>
+</ul>
+</li>
+<li id="menu-item-54" class="bg-blue2 col-md-4 col-sm-4 menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="http://openbalada.com.br/divulgar-seu-evento"><strong>anuncie gratis</strong></a></li>
+<li id="menu-item-142" class="bg-green1 col-md-2 col-sm-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-142"><a href="http://openbalada.com.br/contato">contato</a></li>
+</ul></div> 
+                   
+                  <form class="col-md-2 col-sm-2 input-search" method="get" id="searchform" action="http://openbalada.com.br/"> 
+                    <div class="form-group form-group-navbar-nav">
+                      <input class="form-control" type="text" value="" name="s" id="s" onblur="if (this.value == '')  
+                      {this.value = '';}"  
+                      onfocus="if (this.value == ''){this.value = '';}" /> 
+                      <input type="hidden" id="searchsubmit" /> 
+                    </div> 
+                  </form>
+                </div>
+              </nav>
+            </div>
+          </header> 
+<section class="row"> 
+  <div class="col-md-12 col-sm-12 col-xs-12">
+    <h1 class="titulo-page"><small>Eventos em  </small><br>Funk</h1>
+      </div>
+
+  
+
+  
+    <article class="col-md-12">
+      </article>
+
+
+
+  <article class="col-md-3 eventos">
+    <a href="http://openbalada.com.br/agenda/sao-jose-dos-campos/belo-em-sjc-no-espaco-villa-nova" title="Clique para Mais Informações">
+    <img width="600" height="600" src="http://openbalada.com.br/wp-content/uploads/2015/03/belo-em-sjcampos-no-espaco-villa-nova-600x600.jpg" class="img-responsive center-block wp-post-image" alt="belo-em-sjcampos-no-espaco-villa-nova" />    <div class="detalhes"> 
+      <div class="detalhes-bloco ">
+        <div class="row">
+          <div class="evento-descricao evento-descricao-secundario col-md-9 col-sm-9 col-xs-9">
+            <h2>Belo em SJC no Espaço Villa Nova</h2>
+                                                    <h3>Espaço Villa Nova</h3>
+                
+            <h4>Pagode</h4>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="evento-data evento-data-secundario">
+               
+                        <p>04</p>
+            <p><small>abr</small></p>
+                  </div>
+      </div><!-- /evento-data -->
+        </div>
+        <div class="clear"></div>
+      </div><!-- /detalhes-bloco -->
+      <div class="clear"></div>
+    </div><!-- /detalhes -->
+    </a>
+</article> 
+  <div class="clearfix"></div>            
+</section>
+
+
+<section class="row"> 
+         <div class="navigation">
+      </div>      
+    <div class="clear"></div>
+      
+</section>
+</div><!-- /container -->
+
+<script>
+// Manter a altura dos eventos comuns todos iguais
+$( document ).ready(function() {
+  var heights = $(".altura").map(function() {
+    return $(this).height();
+  }).get(),
+  maxHeight = Math.max.apply(null, heights);
+  $(".altura").height(maxHeight);
+});
+</script>
+
+    <div class="clear clearfix"></div>
+    <footer class="clearfix"> 
+    	<div class="container">
+    		<div class="row">
+                <div class="col-md-4 text-center padding-top-bottom-5">
+        			<p><img class="logo-footer" src="http://openbalada.com.br/wp-content/themes/openbalada_v2/img/openbalada-logo-footer.png" alt="OpenBalada"></p>
+                </div>
+                <div class="col-md-4 text-center padding-top-bottom-5">
+                    <p><small>2015 - Todos os direitos reservados  |  Versão 0.2.75</small></p>
+                </div>
+                <div class="col-md-4 text-center padding-top-bottom-5">
+                    <a href="http://www.dekmidia.com.br" target="_blank" title="Precisando de soluções Digitais? Conheça a DekMídia" rel="nofollow">
+                        <p><img class="logo-footer" src="http://openbalada.com.br/wp-content/themes/openbalada_v2/img/projeto-dekmidia.png" alt="OpenBalada"></p>
+                    </a>
+                </div>
+    		</div>  
+    	</div>       
+    </footer>
+    <!-- ESTILOS -->
+    <link rel="stylesheet" type="text/css" media="all" href="http://openbalada.com.br/wp-content/plugins/bwp-minify/min/?f=wp-content/themes/openbalada_v2/style.css" />
+    
+    
+      
+    
+    <!-- SCRIPTS -->
+    
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.0 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Tá sem opção de onde ir curtir? Clique aqui e saiba o que está rolando de diversão na sua cidade. OpenBalada, onde sua diversão começa."/>
+<link rel="canonical" href="http://openbalada.com.br/agenda/estilo/funk" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:type" content="object" />
+<meta property="og:title" content="Eventos em Funk - OpenBalada | Onde sua diversão começa" />
+<meta property="og:description" content="Tá sem opção de onde ir curtir? Clique aqui e saiba o que está rolando de diversão na sua cidade. OpenBalada, onde sua diversão começa." />
+<meta property="og:url" content="http://openbalada.com.br/agenda/estilo/funk" />
+<meta property="og:site_name" content="OpenBalada | Onde sua diversão começa" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Feed de OpenBalada | Onde sua diversão começa &raquo;" href="http://openbalada.com.br/feed" />
+<link rel="alternate" type="application/rss+xml" title="OpenBalada | Onde sua diversão começa &raquo;  Feed de comentários" href="http://openbalada.com.br/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Feed da Categoria OpenBalada | Onde sua diversão começa &raquo; Funk" href="http://openbalada.com.br/agenda/estilo/funk/feed" />
+<link rel='stylesheet' id='contact-form-7-group-css' href='http://openbalada.com.br/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by Yoast plugin v5.3.3 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-59989207-1', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('send','pageview');
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type="text/javascript" src="http://openbalada.com.br/wp-content/cache/minify/000000/M9bPKixNLarUMYYydHMz04sSS1L1cjPzAA.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://openbalada.com.br/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://openbalada.com.br/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.1.1" />
+    <script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/openbalada.com.br\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Enviando ...","cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://openbalada.com.br/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js,wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+    <script type="text/javascript" src="http://openbalada.com.br/wp-content/cache/minify/000000/M9DPL0jNS0rMSUxJjC8z0s8q1s8qLE0tqtTLzcwDAA.js"></script>
+<script type="text/javascript" src="http://openbalada.com.br/wp-content/themes/openbalada_v2//js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <script>
+    // Manter a altura dos eventos comuns todos iguais
+    $( document ).ready(function() {
+      var heights = $(".altura").map(function() {
+        return $(this).height();
+      }).get(),
+      maxHeight = Math.max.apply(null, heights);
+      $(".altura").height(maxHeight);
+    });
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-59989207-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk
+Page Caching using disk: enhanced
+
+ Served from: openbalada.com.br @ 2015-03-31 11:50:20 by W3 Total Cache -->

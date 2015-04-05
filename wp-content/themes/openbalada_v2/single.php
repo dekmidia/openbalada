@@ -43,26 +43,26 @@ $dataSistema = date( 'Y-m-d' );
       <div class="clearfix"></div>
     </div><!-- /detalhes -->
    </div><!-- /eventos-single-page -->
+  
     <div class="adsense hidden-xs hidden-sm">
-     <!-- Validação OpenBalada -->
-     <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8448516230767950"
-     data-ad-slot="2925927825"
-     data-ad-format="auto"></ins>
-     <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-     </script>
+      <script type="text/javascript">
+            bb_bid = "1700590";
+            bb_lang = "pt-BR";
+            bb_name = "custom";
+            bb_limit = "9";
+            bb_format = "bbo";
+          </script>
+          <script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
     </div>
     <div class="adsense visible-xs visible-sm ad-single">
-      <!-- SinglePage-OpenBalada -->
-      <ins class="adsbygoogle"
-      style="display:inline-block;width:320px;height:100px;margin:auto;"
-      data-ad-client="ca-pub-8448516230767950"
-      data-ad-slot="7046573029"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+      <script type="text/javascript">
+            bb_bid = "1700590";
+            bb_lang = "pt-BR";
+            bb_name = "custom";
+            bb_limit = "9";
+            bb_format = "bbo";
+          </script>
+          <script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
     </div>
   </div>
   <br>

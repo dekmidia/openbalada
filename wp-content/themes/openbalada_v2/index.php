@@ -250,7 +250,7 @@ wp_reset_query();?>
   <article class="col-md-3 col-sm-12 col-xs-12 eventos">    
     <?php if ($publicidade == "Sim") : ?>
       <div class="detalhes">
-         <div class="evento-descricao evento-descricao-comum padding-left-right-none col-md-12 col-sm-12 col-xs-12 altura">
+         <div class="evento-descricao evento-descricao-comum col-md-12 col-sm-12 col-xs-12 altura padding-none">
           <?php the_content();?>
           <?php $adsense = null;
           $adsense = get_post_meta($post->ID,'codigo-adsense',true); 
