@@ -80,3 +80,70 @@
 [27-Feb-2015 15:02:26 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ':' or ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 281
 [27-Feb-2015 15:02:28 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ':' or ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 281
 [27-Feb-2015 15:09:33 UTC] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/category.php on line 155
+[04-Mar-2015 21:44:28 America/New_York] PHP Warning:  split() expects parameter 2 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 132
+[04-Mar-2015 22:13:59 America/New_York] PHP Fatal error:  Function name must be a string in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 132
+[05-Mar-2015 03:31:19 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 130
+[04-Mar-2015 22:34:57 America/New_York] PHP Fatal error:  Call to undefined function smart_category_top_parent_id() in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 132
+[04-Mar-2015 22:41:49 America/New_York] PHP Fatal error:  Call to undefined function smart_category_top_parent_id() in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 132
+[04-Mar-2015 23:03:58 America/New_York] PHP Fatal error:  Call to undefined function smart_category_top_parent_id() in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 132
+[05-Mar-2015 00:40:36 America/New_York] PHP Fatal error:  Call to undefined function smart_category_top_parent_id() in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 132
+[05-Mar-2015 04:32:24 America/New_York] PHP Fatal error:  Call to undefined function smart_category_top_parent_id() in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 132
+[17-Mar-2015 23:05:16 UTC] PHP Parse error:  syntax error, unexpected $end in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 142
+[17-Mar-2015 23:06:26 UTC] PHP Parse error:  syntax error, unexpected $end in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/single.php on line 142
+[17-Mar-2015 23:51:23 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 104
+[17-Mar-2015 23:54:33 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 104
+[18-Mar-2015 00:04:23 UTC] PHP Parse error:  syntax error, unexpected $end in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 160
+[18-Mar-2015 00:04:30 UTC] PHP Parse error:  syntax error, unexpected $end in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 160
+[27-Mar-2015 23:31:33 UTC] PHP Parse error:  syntax error, unexpected T_ECHO in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/header.php on line 62
+[29-Mar-2015 17:46:27 America/New_York] PHP Catchable fatal error:  Object of class WP_Error could not be converted to string in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:46:38 America/New_York] PHP Catchable fatal error:  Object of class WP_Error could not be converted to string in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  strlen() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 17:56:17 America/New_York] PHP Warning:  substr() expects parameter 1 to be string, object given in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[29-Mar-2015 22:01:34 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 283
+[29-Mar-2015 20:29:21 America/New_York] PHP Fatal error:  Call to undefined function post_child_category() in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 282
+[30-Mar-2015 00:47:26 UTC] PHP Parse error:  syntax error, unexpected T_ECHO in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 286
+[29-Mar-2015 20:47:45 America/New_York] PHP Fatal error:  Call to a member function str_replace() on a non-object in /home/openbaladacom/public_html/wp-content/themes/openbalada_v2/index.php on line 285
