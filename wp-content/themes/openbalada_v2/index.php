@@ -304,8 +304,18 @@ wp_reset_query();?>
   </article>
   <?php endwhile; else:?>
     <?php $event_comum = 0; ?>
-  <?php endif;
-  // Reset Query
+  <?php endif; ?>
+  <!-- <article class="col-md-12 col-sm-12 col-xs-12 eventos">
+    <?php
+    $category_id = get_cat_ID( 'Agenda' );
+    $category_link = get_category_link( $category_id );
+    ?>
+    Print a link to this category
+    <a class="btn btn-default border-none" href="<?php echo esc_url( $category_link ); ?>" title="Category Name">Veja mais Eventos</a>
+  </article> -->
+
+  <?php // Reset Query
+
 
 /* ------------- EVENTO EM BRANCO ------------- */
 
@@ -338,6 +348,37 @@ wp_reset_query();?>
   <?php endif;
   wp_reset_query();?>    
 </section>
+
+<!-- <section class="row"> 
+  <div class="col-md-12 col-sm-12 col-xs-12">
+    <h1 class="titulo-azul margin-top-azul">Novidades</h1>
+  </div>
+  <?php query_posts('showposts=-1&category_name=novidades');?>
+  <?php if (have_posts()): while (have_posts()) : the_post();?>
+  <article class="col-md-3 eventos">
+    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+      <?php 
+      if(has_post_thumbnail()) : the_post_thumbnail( 'large', array( 'class' => 'img-responsive center-block' ) ); 
+      else : ?><img src="http://openbalada.com.br/wp-content/themes/openbalada_v2/img/no-image.jpg" class="img-responsive center-block" alt="Imagem Não Disponível"><?php
+      endif; 
+    ?>
+      <div class="detalhes"> 
+        <div class="detalhes-bloco materia">
+          <div class="row">
+            <div class="evento-descricao evento-descricao-secundario col-md-9 col-sm-9 col-xs-9">
+              <h2><?php the_title();?></h2>
+              <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
+          </div>
+          </div>
+          <div class="clear"></div>
+        </div>/detalhes-bloco
+        <div class="clear"></div>
+      </div>/detalhes
+    </a>
+  </article> 
+<?php endwhile; else:?>
+<?php endif;?>
+</section> -->
 </div><!-- /container -->
 
 <?php get_footer();?>

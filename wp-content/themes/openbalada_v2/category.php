@@ -97,22 +97,33 @@ wp_reset_query();?>
 <?php /* ------------- EVENTO SECUNDÁRIO ------------- */?>
 
 <?php
-  $args=array(
-    'showposts' => -1,
-    'cat' => $categoria,
-    'meta_key' => 'evento_tipo',
-    'meta_value' => 'Secundario',
-    'meta_query' => array(
-      array(
-        'key' => 'evento-data',
-        'value' => $dataSistema,
-        'compare' => '>=',
-        'type' => 'DATE'
-        )
+   $args=array(
+  'showposts' => 4,
+  'post_parent' => 'Cidade',
+  'meta_query' => array(
+    'relation' => 'AND',
+    array(
+      'key' => 'evento-data',
+      'value' => $dataSistema,
+      'compare' => '>=',
+      'type' => 'DATE'
       ),
-    'orderby' => 'evento-data',
-    'order' => 'ASC'
-    );
+    array(
+      'relation' => 'OR',
+      array(
+        'key' => 'evento_tipo',
+          'compare' => 'NOT EXISTS', // works!
+          'value' => '' // This is ignored, but is necessary...
+          ),
+      array(
+        'key' => 'evento_tipo',
+        'value' => 'Secundario'
+        )
+      )
+    ),
+  'orderby' => 'evento-data',
+  'order' => 'ASC'
+  );
 
   query_posts($args);
   if (have_posts()): while (have_posts()) : the_post();  
@@ -120,10 +131,26 @@ wp_reset_query();?>
   //Recebe os valores de tipo de evento, data e se o evento é hoje */  
   $eventoTipo = get_post_meta($post->ID,'evento-tipo',true);
   $eventoData = get_post_meta($post->ID,'evento-data',true);
+  $publicidade = get_post_meta($post->ID,'post-publicidade',true);
   $eHoje = verificaQuando ($eventoData);
   ?>
 
   <article class="col-md-3 eventos">
+    <?php if ($publicidade == "Sim") : ?>
+      <div class="detalhes detalhes-ads"> 
+        <div class="row">
+          <div class="evento-descricao evento-descricao-secundario col-md-12 col-sm-12 col-xs-12">
+            <?php if(has_post_thumbnail()):the_post_thumbnail( 'medium', array( 'class' => 'img-responsive center-block')); ?>
+             <?php else : ?>
+              <?php the_content();?>
+              <?php $adsense = null;
+              $adsense = get_post_meta($post->ID,'codigo-adsense',true); 
+              echo $adsense;?>
+            <?php endif;  ?>            
+          </div>
+        </div>
+      </div><!-- /detalhes -->
+    <?php else : ?> 
     <a href="<?php the_permalink();?>" title="Clique para Mais Informações">
     <?php 
       if(has_post_thumbnail()):the_post_thumbnail( 'medium', array( 'class' => 'img-responsive center-block'));
@@ -142,7 +169,12 @@ wp_reset_query();?>
             <?php else : ?>
               <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
             <?php endif; ?>    
-            <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
+            <!-- <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4> -->
+            <?php foreach((get_the_category()) as $cat) {
+                if (!($cat->category_parent == 23))
+                $city = $cat->cat_name . ' '; };
+                $cidade = str_replace("Agenda ", "", $city);
+                echo "<h4>" . $cidade . "</h4>"; ?>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-3">
             <div class="evento-data evento-data-secundario">
@@ -161,6 +193,7 @@ wp_reset_query();?>
       <div class="clear"></div>
     </div><!-- /detalhes -->
     </a>
+  <?php endif; ?>   
 </article> 
 <?php endwhile; else:?>
   <?php $event_secundario = 0; ?>
@@ -177,7 +210,7 @@ wp_reset_query();?>
  /* LOOP PARA EVENTO COMUM */
  $args=array(
   'showposts' => -1,
-  'cat' => $categoria,
+  'post_parent' => 'Cidade',
   'meta_query' => array(
     'relation' => 'AND',
     array(
@@ -209,51 +242,69 @@ wp_reset_query();?>
   //Recebe os valores de tipo de evento, data e se o evento é hoje */  
   $eventoTipo = get_post_meta($post->ID,'evento-tipo',true);
   $eventoData = get_post_meta($post->ID,'evento-data',true);
+  $publicidade = get_post_meta($post->ID,'post-publicidade',true);
   $eHoje = verificaQuando ($eventoData);
   ?>
-
-  <article class="col-md-3 col-sm-12 col-xs-12 eventos">
-    <a href="<?php the_permalink();?>" title="Clique para Mais Informações" >
-      <div class="detalhes <?php echo $eHoje;?>">
-        <div class="col-md-3 col-sm-3 col-xs-3 altura"> 
-          <div class="display-table">
-            <div class="table-header">
-            </div>
-            <div class="table-content">
-              <div class="evento-data">
-              <?php if ($eHoje == "hoje") : ?>
-                <p>HJ</p>
-              <?php else : ?> 
-                <?php $formatado = formataData($eventoData); // recebe as datas formatadas?>
-                <p><?php echo $formatado[0]; ?></p>
-                <p><small><?php echo $formatado[1]; ?></small></p>
-              <?php endif; ?>
+  <article class="col-md-3 col-sm-12 col-xs-12 eventos">    
+    <?php if ($publicidade == "Sim") : ?>
+      <div class="detalhes">
+         <div class="evento-descricao evento-descricao-comum col-md-12 col-sm-12 col-xs-12 altura padding-none">
+          <?php the_content();?>
+          <?php $adsense = null;
+          $adsense = get_post_meta($post->ID,'codigo-adsense',true); 
+          echo $adsense;?>
+         </div>
+      </div>
+    <?php else : ?> 
+      <a href="<?php the_permalink();?>" title="Clique para Mais Informações" >
+        <div class="detalhes <?php echo $eHoje;?>">
+          <div class="col-md-3 col-sm-3 col-xs-3 altura">           
+            <div class="display-table">
+              <div class="table-header">
+              </div>
+              <div class="table-content">
+                <div class="evento-data">
+                <?php if ($eHoje == "hoje") : ?>
+                  <p>HJ</p>
+                <?php else : ?> 
+                  <?php $formatado = formataData($eventoData); // recebe as datas formatadas?>
+                  <p><?php echo $formatado[0]; ?></p>
+                  <p><small><?php echo $formatado[1]; ?></small></p>
+                <?php endif; ?>
+                </div>
+              </div>
+              <div class="table-footer">            
               </div>
             </div>
-            <div class="table-footer">            
-            </div>
           </div>
+          <div class="evento-descricao evento-descricao-comum padding-left-right-none col-md-9 col-sm-9 col-xs-9 altura">
+            <h2><?php the_title();?></h2>
+            <!-- <?php $variavel = get_post_meta($post->ID,'evento-local',true); ?>
+              <?php if (($variavel != "")||($variavel != null)) : ?>
+                <?php $str = strip_tags($variavel);?>
+                <h3><?php echo $str; ?></h3>
+              <?php else : ?>
+                <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
+              <?php endif; ?> -->
+              <!-- <h4><?php $category = get_the_category(); echo $category[0]->cat_name; ?></h4> -->
+              <h4><?php foreach((get_the_category()) as $cat) {
+                if (!($cat->category_parent == 23))
+                $city = $cat->cat_name . ' '; };
+                $cidade = str_replace("Agenda ", "", $city);
+                echo $cidade; ?></h4>
+             
+          </div>
+          <div class="clear"></div>
+        <!-- evento-data -->
         </div>
-        <div class="evento-descricao evento-descricao-comum padding-left-right-none col-md-9 col-sm-9 col-xs-9 altura">
-          <h2><?php the_title();?></h2>
-          <?php $variavel = get_post_meta($post->ID,'evento-local',true); ?>
-            <?php if (($variavel != "")||($variavel != null)) : ?>
-              <?php $str = strip_tags($variavel);?>
-              <h3><?php echo $str; ?></h3>
-            <?php else : ?>
-              <h3><?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); echo '...'; ?></h3>
-            <?php endif; ?>
-          <h4><?php $category = get_the_category(); echo $category[1]->cat_name; ?></h4>
-        </div>
-        <div class="clear"></div>
-      <!-- evento-data -->
-      </div>
-    </a>
+      </a>
+    <?php endif; ?>    
   </article>
   <?php endwhile; else:?>
     <?php $event_comum = 0; ?>
-  <?php endif;
-  // Reset Query
+  <?php endif; ?>
+
+  <?php // Reset Query
 
 /* ------------- EVENTO EM BRANCO ------------- */
 

@@ -27,6 +27,12 @@
   <meta name="robots" content="index,follow" />
 
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+  <!-- ESTILOS -->
+  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+  <link href="http://openbalada.com.br/wp-content/themes/openbalada_v2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://openbalada.com.br/wp-content/themes/openbalada_v2/css/bootstrap-xl.css" rel="stylesheet">
+  <link href="http://localhost/openbalada/wp-content/themes/openbalada_v2/css/custom.css" rel="stylesheet">  
+  <link href="http://openbalada.com.br/wp-content/themes/openbalada_v2/css/fonts.css" rel="stylesheet">
 
   <!-- Fav and touch icons -->
   <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">  

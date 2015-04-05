@@ -28,7 +28,10 @@ body, h1, h2, h3, h4, h5, p, span, strong {font-family: 'SegoeUI', arial, verdan
 .bg-red, .bg-red:hover, .bg-red ul.dropdown-menu, .bg-red > a.dropdown-toggle{background: #D90000!important; color: #fff!important;}
 .bg-red2, .bg-red2:hover, .bg-red2 ul.dropdown-menu, .bg-red2 > a.dropdown-toggle {background: #FE0000!important; color: #fff!important;}
 
-.titulo {color: #FF0000; font-size: 2.3em; margin: 10px 0;}
+.titulo {color: #FF0000; font-size: 2.3em; margin: 10px 0; letter-spacing: -1px;}
+.titulo-azul {color: #0099CC; font-size: 2.5em; margin: 10px 0; letter-spacing: -1px;}
+.margin-top-red {border-bottom: 1px solid #FF0000; padding-bottom: 15px;}
+.margin-top-azul {border-top: 1px solid #0099CC; padding-top: 15px;}
 .titulo-page {color: #FF0000; font-size: 2.6em; letter-spacing: 0px; margin: 30px 0; font-weight: bold;}
 .color-red {color: #FF0000!important;}
 .clear {clear: both;}
@@ -37,6 +40,7 @@ a:hover {text-decoration: none; color: #fff;}
 section a {color: #999;}
 section a:hover {color: #aaa;}
 .padding-top-bottom-5 {padding-top: 5px; padding-bottom: 5px;}
+.border-none {border:none;}
 
 .text-uppercase {text-transform: uppercase;}
 .margin-right-none {margin-right: 0;}
@@ -133,6 +137,7 @@ article.eventos .detalhes .evento-data p small{font-size: 0.5em;text-align: cent
 .evento-descricao-secundario p{font-size: 3em;}
 
 .hoje{background: #339933!important;}
+.materia{background: #0099CC!important;}
 .evento-descricao-comum h2 {margin: 0; padding: 0; color:#777; color:#d90000;}
 .hoje .evento-descricao-comum h2 {color:#339933;}
 

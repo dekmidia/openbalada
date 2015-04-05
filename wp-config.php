@@ -27,14 +27,17 @@ define( 'WP_MEMORY_LIMIT', '256M' );
 // ** Configurações do MySQL - Você pode pegar essas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
 define('DB_NAME', 'openbala_obdb_v1');
+/*define('DB_NAME', 'openbala_obdb_v1');*/
 
 
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'openbala_opnblda');
+define('DB_USER', 'root');
+/*define('DB_USER', 'openbala_opnblda');*/
 
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', 's@&5IH4u');
+define('DB_PASSWORD', '');
+/*define('DB_PASSWORD', 's@&5IH4u');*/
 
 
 /** nome do host do MySQL */
